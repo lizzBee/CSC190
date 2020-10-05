@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="2dp"
+        android:color="@color/buttonOutline"/>
+    <gradient
+        android:type="sweep"
+        android:centerX="1"
+        android:centerY="0"
+        android:startColor="@color/buttonOutline"
+        android:endColor="@color/buttonOutline"
+        android:centerColor="@color/stars"
+        android:gradientRadius="30dp" />
+    <corners
+        android:radius="10dp" />
+</shape>
