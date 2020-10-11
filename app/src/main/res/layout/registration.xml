@@ -30,9 +30,10 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hof_id"
-        android:textSize="19sp"
         android:autofillHints="username"
+        android:text="@string/hof_id"
+        android:textStyle="bold"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="16dp" />
@@ -43,13 +44,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginLeft="161dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
         android:layout_marginBottom="128dp"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -58,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/registration"
+        android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent"
@@ -68,6 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/username"
+        android:textStyle="bold"
         android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -78,6 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
+        android:textStyle="bold"
         android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
@@ -88,6 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
+        android:textStyle="bold"
         android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -101,59 +102,74 @@
         app:layout_constraintGuide_begin="16dp" />
 
     <!--email-->
+
+    <!--password-->
+
+    <!--hofstra id-->
+
+    <!--username-->
+
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:autofillHints="username"
-        android:hint="@string/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="154dp" />
 
-    <!--password-->
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints="username"
+        android:ems="10"
+        android:layout_height="35dp"
+        android:hint="@string/input"
+        android:background="@drawable/my_border"
+        android:inputType="textEmailAddress"
+
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="208dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:inputType="textPassword"
+        android:layout_height="35dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="56dp"
         android:autofillHints="password"
-        android:hint="@string/password"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="386dp" />
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="@string/input"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
-    <!--hofstra id-->
     <EditText
         android:id="@+id/editTextNumber2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:ems="10"
-        android:inputType="number"
+        android:layout_height="35dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="52dp"
         android:autofillHints="password"
-        android:hint="@string/hof_id"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="239dp" />
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="@string/input"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
 
-    <!--username-->
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:layout_height="35dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
         android:autofillHints="username"
-        android:hint="@string/username"
-        android:
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="325dp" />
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="@string/input"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        tools:layout_editor_absoluteY="335dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraints"
@@ -189,5 +205,12 @@
         android:id="@+id/constraints6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
