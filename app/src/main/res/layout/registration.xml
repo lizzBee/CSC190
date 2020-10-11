@@ -40,12 +40,14 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginLeft="161dp"
         android:layout_marginBottom="128dp"
         android:text="@string/next"
+        android:background="@drawable/my_button"
+        style="@style/Button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -88,8 +90,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
-        android:textStyle="bold"
-        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="16dp" />
@@ -129,8 +129,8 @@
 
     <EditText
         android:id="@+id/editTextTextPassword2"
-        android:layout_width="208dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="76dp"
         android:layout_marginLeft="76dp"
         android:layout_marginTop="56dp"
