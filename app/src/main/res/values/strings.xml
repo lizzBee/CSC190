@@ -6,4 +6,14 @@
     <string name="password">Password:</string>
     <string name="hof_id">Hofstra ID:</string>
     <string name="next">Next Step</string>
+    <string name="input"></string>
+    <string name="home_button">Home</string>
+    <string name="starred_button">Starred</string>
+    <string name="yl_button">Your Listings</string>
+    <string name="profile_button">Profile</string>
+    <string name="db">DEPENDS ON DB</string>
+    <string name="verification">Verify User Info</string>
+    <string name="new_pass">New Password:</string>
+    <string name="new_usn">New Username:</string>
+
 </resources>
