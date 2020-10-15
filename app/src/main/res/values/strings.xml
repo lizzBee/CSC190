@@ -19,5 +19,11 @@
     <string name="edit_list">Edit</string>
     <string name="del_list">Delete</string>
     <string name="db_title">Title DB</string>
+    <string name="new_book">New Book</string>
+    <string name="new_title">Title</string>
+    <string name="new_isbn">ISBN</string>
+    <string name="new_condition">Condition</string>
+    <string name="new_price">Price</string>
+    <string name="add_book">Add Book</string>
 
 </resources>
