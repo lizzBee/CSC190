@@ -15,5 +15,9 @@
     <string name="verification">Verify User Info</string>
     <string name="new_pass">New Password:</string>
     <string name="new_usn">New Username:</string>
+    <string name="my_listings">My Listings</string>
+    <string name="edit_list">Edit</string>
+    <string name="del_list">Delete</string>
+    <string name="db_title">Title DB</string>
 
 </resources>
