@@ -1,4 +1,4 @@
-package com.csc190.bookbazaar;
+package com.example.bookbizarre;
 
 import org.junit.Test;
 

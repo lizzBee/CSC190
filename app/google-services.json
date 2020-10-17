@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "115755475239",
-    "firebase_url": "https://csc190-a2d8d.firebaseio.com",
-    "project_id": "csc190-a2d8d",
-    "storage_bucket": "csc190-a2d8d.appspot.com"
+    "project_number": "773539745439",
+    "firebase_url": "https://bookbizarre-bc582.firebaseio.com",
+    "project_id": "bookbizarre-bc582",
+    "storage_bucket": "bookbizarre-bc582.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:115755475239:android:851126804cb51f94c20902",
+        "mobilesdk_app_id": "1:773539745439:android:1a87ee8fa22325713bdcaa",
         "android_client_info": {
-          "package_name": "com.csc190.bookbazaar"
+          "package_name": "com.example.bookbizarre"
         }
       },
       "oauth_client": [
         {
-          "client_id": "115755475239-g13ijc7b0ab41cj727gepehi7cpnjin7.apps.googleusercontent.com",
+          "client_id": "773539745439-nva3q69119dh35g8n8cd60frbkbqtu5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookbizarre",
+            "certificate_hash": "fbce4d31f600af49ee6c59856f676dd69b1e096c"
+          }
+        },
+        {
+          "client_id": "773539745439-mru18vr3stsh4m06a031lc7rherfqagh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBWOnaUo-Wbsin5DDaBstbh5z1-EBYs8S4"
+          "current_key": "AIzaSyCAL0c8JPBvY6_q6zwzVn-ySLY9K7m8IWA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "115755475239-g13ijc7b0ab41cj727gepehi7cpnjin7.apps.googleusercontent.com",
+              "client_id": "773539745439-mru18vr3stsh4m06a031lc7rherfqagh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
