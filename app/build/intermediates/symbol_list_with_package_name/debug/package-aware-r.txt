@@ -924,6 +924,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id background
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -931,6 +932,13 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnCreateNewAccount
+id btnHome2
+id btnHome3
+id btnLogin
+id btnProfile2
+id btnStarred2
+id btnYourListings2
 id button
 id button11
 id button2
@@ -993,6 +1001,8 @@ id editTextTextPersonName
 id editTextTextPersonName2
 id edit_query
 id end
+id etPW
+id etUN
 id expand_activities_button
 id expanded_menu
 id flip
@@ -1023,6 +1033,7 @@ id imageView
 id info
 id invisible
 id italic
+id ivBookCover
 id jumpToEnd
 id jumpToStart
 id layout
@@ -1103,6 +1114,7 @@ id staticPostLayout
 id stop
 id submenuarrow
 id submit_area
+id switchStar
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1140,6 +1152,9 @@ id topPanel
 id transitionToEnd
 id transitionToStart
 id triangle
+id tvForgotPW
+id tvPrice
+id tvWelcome
 id unchecked
 id uniform
 id up
@@ -1193,6 +1208,8 @@ layout abc_tooltip
 layout base
 layout custom_dialog
 layout edit_profile
+layout home
+layout login
 layout mylistings
 layout notification_action
 layout notification_action_tombstone
@@ -1202,9 +1219,11 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout profile
 layout registration
+layout search_results
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout specific_textbook
 layout starred
 layout support_simple_spinner_dropdown_item
 layout verification

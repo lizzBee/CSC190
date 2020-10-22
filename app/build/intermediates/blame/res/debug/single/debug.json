@@ -44,6 +44,14 @@
         "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\layout_home.xml.flat",
+        "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\src\\main\\res\\layout\\home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\layout_login.xml.flat",
+        "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
         "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -68,12 +76,20 @@
         "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\layout_specific_textbook.xml.flat",
+        "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\src\\main\\res\\layout\\specific_textbook.xml"
+    },
+    {
         "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_results.xml.flat",
+        "source": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\src\\main\\res\\layout\\search_results.xml"
     },
     {
         "merged": "C:\\Users\\Charlie\\AndroidStudioProjects\\CSC190\\app\\build\\intermediates\\res\\merged\\debug\\layout_profile.xml.flat",
