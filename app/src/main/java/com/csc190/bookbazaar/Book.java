@@ -1,21 +1,23 @@
 package com.csc190.bookbazaar;
 
-import java.net.URL;
-
 //need a way to access hofID from within book without asking user for it
 //store book inside of a user to access the ID?
 //how to show book on home screen? store book in an array?
 
 public class Book {
-    String title, ISBN, price, condition, picture, hofstraID;
+    String title, ISBN, price, condition, hofstraID;
+    String picture;
+    String api = "AIzaSyCVDsAsNnZWvztoozZMSObD4WxPvnZ1L7E";
+    private boolean isStarred;
 
+    //OpenBooks for images: http://covers.openlibrary.org/b/isbn/" + book.ISBN +"-M.jpg"
 
-    public Book(String bookTitle, String ISBNnum, String cond, String prix, String pictureURL, String hofID) {
+    public Book(String bookTitle, String ISBNnum, String cond, String prix, String pix, String hofID) {
         title = bookTitle;
         ISBN = ISBNnum;
         condition = cond;
         price = prix;
-        picture = pictureURL;
+        picture = pix;
         hofstraID = hofID;
         isStarred = false;
     }
@@ -36,10 +38,9 @@ public class Book {
         this.condition = condition;
     }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
+    public void setPicture(String pic) {this.picture = pic;}
 
+    public String getPicture() {return picture;}
     public void setHofstraID(String hofstraID) {
         this.hofstraID = hofstraID;
     }
@@ -47,8 +48,6 @@ public class Book {
     public void setStarred(boolean starred) {
         isStarred = starred;
     }
-
-    private boolean isStarred;
 
     public String getTitle() {
         return title;
@@ -64,10 +63,6 @@ public class Book {
 
     public String getCondition() {
         return condition;
-    }
-
-    public String getPicture() {
-        return picture;
     }
 
     public String getHofstraID() {
