@@ -7,10 +7,9 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/search_bar_ml"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_marginTop="56dp"
         android:layout_marginBottom="635dp"
         android:autofillHints="@string/input"
         android:background="@drawable/my_border"
@@ -20,8 +19,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -34,24 +32,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/search" />
-
-    <TextView
-        android:id="@+id/textView11"
-        style="@style/Title_text"
-        android:layout_width="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginRight="212dp"
-        android:text="@string/my_listings"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
         android:id="@+id/button7"
@@ -59,7 +41,6 @@
         android:layout_height="42dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="212dp"
         android:layout_marginEnd="23dp"
         android:layout_marginRight="23dp"
         android:layout_marginBottom="13dp"
@@ -67,8 +48,7 @@
         android:text="@string/db_title"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button8"
@@ -95,5 +75,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/booklist_ml"
+        android:layout_width="386dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="213dp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar_ml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
