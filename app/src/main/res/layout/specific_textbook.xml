@@ -46,12 +46,14 @@
         android:layout_height="43dp"
         android:layout_marginStart="7dp"
         android:layout_marginLeft="7dp"
+        android:layout_marginTop="238dp"
         android:layout_marginEnd="116dp"
         android:layout_marginRight="116dp"
         android:contentDescription="@string/starred_button"
         app:layout_constraintBottom_toBottomOf="@+id/picture_bl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/picture_bl"
+        app:layout_constraintTop_toTopOf="@+id/picture_bl"
         app:srcCompat="@android:drawable/star_big_off" />
 
     <TextView
