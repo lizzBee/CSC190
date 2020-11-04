@@ -44,37 +44,35 @@
         android:id="@+id/imageView4"
         android:layout_width="49dp"
         android:layout_height="43dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="238dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        android:contentDescription="@string/starred_button"
-        app:layout_constraintBottom_toBottomOf="@+id/picture_bl"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/picture_bl"
-        app:layout_constraintTop_toTopOf="@+id/picture_bl"
-        app:srcCompat="@android:drawable/star_big_off" />
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:srcCompat="@android:drawable/star_big_off"
+        android:contentDescription="@string/starred_button" />
 
     <TextView
-        android:id="@+id/price_bl"
+        android:id="@+id/textView18"
         style="@style/Title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="46dp"
-        android:layout_marginLeft="46dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="36dp"
         android:text="@string/price"
-        app:layout_constraintBottom_toTopOf="@+id/condition_bl"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/picture_bl"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
 
     <TextView
-        android:id="@+id/condition_bl"
+        android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -82,30 +80,26 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
-        android:layout_marginBottom="46dp"
         android:text="@string/condition"
-        style="@style/Title_text"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.777"
-        app:layout_constraintStart_toEndOf="@+id/picture_bl"
-        app:layout_constraintTop_toBottomOf="@+id/price_bl" />
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView15"
-        style="@style/listing"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginLeft="31dp"
-        android:text="@string/db_title"
+        android:text="@string/textbook_title"
         app:layout_constraintBottom_toTopOf="@+id/textView20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <ImageView
-        android:id="@+id/picture_bl"
+        android:id="@+id/imageView2"
         android:layout_width="212dp"
         android:layout_height="282dp"
         android:layout_marginStart="26dp"
@@ -113,7 +107,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="100dp"
-        android:contentDescription="@string/db_title"
+        android:contentDescription="@string/my_listing"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,22 +118,21 @@
         android:id="@+id/button10"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:background="@drawable/my_button"
         android:text="@string/contact"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/price_bl"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/picture_bl"
-        app:layout_constraintTop_toTopOf="@+id/picture_bl" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView20"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
@@ -151,7 +144,7 @@
 
     <TextView
         android:id="@+id/textView16"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
@@ -159,26 +152,25 @@
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"
         android:text="@string/posted_by"
-        app:layout_constraintBottom_toTopOf="@+id/picture_bl"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/textView17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView17"
-        style="@style/listing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
         android:text="@string/seller"
-        app:layout_constraintBottom_toTopOf="@+id/picture_bl"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <TextView
         android:id="@+id/textView21"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
@@ -190,7 +182,6 @@
 
     <TextView
         android:id="@+id/textView22"
-        style="@style/listing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
@@ -202,7 +193,6 @@
 
     <TextView
         android:id="@+id/textView23"
-        style="@style/listing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"

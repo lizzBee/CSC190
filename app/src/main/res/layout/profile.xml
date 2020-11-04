@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/textView25"
-        style="@style/listing"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="83dp"
@@ -25,7 +25,7 @@
 
     <TextView
         android:id="@+id/textView6"
-        style="@style/listing_is"
+        style="z"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -41,7 +41,7 @@
     <!--DB user's passwrd-->
     <TextView
         android:id="@+id/textView7"
-        style="@style/listing"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="83dp"
@@ -54,7 +54,7 @@
 
     <TextView
         android:id="@+id/textView8"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
@@ -69,7 +69,7 @@
 
     <TextView
         android:id="@+id/textView9"
-        style="@style/listing"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="83dp"
@@ -113,7 +113,7 @@
 
     <TextView
         android:id="@+id/textView24"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"

@@ -1,6 +1,7 @@
 package com.csc190.bookbazaar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,7 +48,7 @@ public class Login extends Activity {
                 database = FirebaseDatabase.getInstance();
                 myRef = database.getReference("user");
 
-                String userNm = username.getEditableText().toString();
+                final String userNm = username.getEditableText().toString();
                 final String pass = password.getEditableText().toString();
 
                 if (userNm.equals("") || pass.equals("")) {
@@ -68,6 +69,11 @@ public class Login extends Activity {
                                         if (pass.equals(passWord)) {
                                             // if it matches, login successful (redirect to home eventually)
                                             Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_LONG).show();
+                                            Intent intent = new Intent(getBaseContext(), Profile.class);
+                                            intent.putExtra("EXTRA_SESSION_ID", userNm);
+                                            //startActivity(intent);
+
+                                            //setContentView(R.layout.profile);
                                         } else {
                                             // if it doesn't match
                                             Toast.makeText(getApplicationContext(), "Username and Password Do Not Match", Toast.LENGTH_LONG).show();
