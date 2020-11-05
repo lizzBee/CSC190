@@ -29,7 +29,7 @@ public class Registration extends Activity {
 
 
         email = (EditText)findViewById(R.id.editTextTextEmailAddress2);
-        hofID = (EditText)findViewById(R.id.editTextNumber2);
+        hofID = (EditText)findViewById(R.id.editTextid);
         //user = (EditText)findViewById(R.id.editTextTextPersonName2);
         pass = (EditText)findViewById(R.id.editTextTextPassword2);
 

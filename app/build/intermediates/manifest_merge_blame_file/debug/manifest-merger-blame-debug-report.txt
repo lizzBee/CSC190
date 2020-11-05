@@ -45,9 +45,9 @@
 27        android:testOnly="true"
 28        android:theme="@style/AppTheme" >
 28-->C:\Users\Emma\Documents\CSC\CSC-190\Project\Project\app\src\main\AndroidManifest.xml:12:9-40
-29        <activity android:name="com.csc190.bookbazaar.Profile" >
+29        <activity android:name="com.csc190.bookbazaar.Login" >
 29-->C:\Users\Emma\Documents\CSC\CSC-190\Project\Project\app\src\main\AndroidManifest.xml:14:9-20:20
-29-->C:\Users\Emma\Documents\CSC\CSC-190\Project\Project\app\src\main\AndroidManifest.xml:14:19-42
+29-->C:\Users\Emma\Documents\CSC\CSC-190\Project\Project\app\src\main\AndroidManifest.xml:14:19-40
 30            <intent-filter>
 30-->C:\Users\Emma\Documents\CSC\CSC-190\Project\Project\app\src\main\AndroidManifest.xml:15:13-19:29
 31                <action android:name="android.intent.action.MAIN" />

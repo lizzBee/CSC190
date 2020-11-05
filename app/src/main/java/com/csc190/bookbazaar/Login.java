@@ -69,10 +69,6 @@ public class Login extends Activity {
                                         if (pass.equals(passWord)) {
                                             // if it matches, login successful (redirect to home eventually)
                                             Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_LONG).show();
-                                            Intent intent = new Intent(getBaseContext(), Profile.class);
-                                            intent.putExtra("EXTRA_SESSION_ID", userNm);
-                                            //startActivity(intent);
-
                                             //setContentView(R.layout.profile);
                                         } else {
                                             // if it doesn't match

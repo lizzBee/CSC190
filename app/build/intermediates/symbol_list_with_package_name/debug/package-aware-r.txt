@@ -931,6 +931,7 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id blocking
+id booklist_ml
 id bottom
 id bounce
 id btnCreateNewAccount
@@ -985,13 +986,13 @@ id dragUp
 id easeIn
 id easeInOut
 id easeOut
-id editTextNumber2
 id editTextTextEmailAddress
 id editTextTextEmailAddress2
 id editTextTextPassword2
 id editTextTextPassword3
 id editTextTextPersonName
 id editTextTextPersonName2
+id editTextid
 id edit_query
 id end
 id etPW
@@ -1076,6 +1077,7 @@ id scrollIndicatorUp
 id scrollView
 id search_badge
 id search_bar
+id search_bar_ml
 id search_button
 id search_close_btn
 id search_edit_frame
@@ -1123,7 +1125,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
 id textView10
-id textView11
 id textView12
 id textView13
 id textView14
@@ -1258,6 +1259,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_book
 string app_name
 string author
 string author_is
@@ -1280,6 +1282,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string condition
+string condition_is
 string contact
 string create
 string db
@@ -1303,13 +1306,17 @@ string isbn_is
 string login
 string my_listing
 string my_listings
-string new_book
+string new_condition
+string new_isbn
 string new_pass
+string new_price
+string new_title
 string new_usn
 string next
 string password
 string posted_by
 string price
+string price_is
 string profile_button
 string project_id
 string registration
@@ -1674,6 +1681,8 @@ style Widget_AppCompat_Toolbar
 style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
+style listing
+style listing_is
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
