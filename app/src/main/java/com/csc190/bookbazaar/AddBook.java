@@ -11,7 +11,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class AddBook extends Activity {
-
+/*
     FirebaseDatabase database;
     DatabaseReference myRef;
 
@@ -63,7 +63,7 @@ public class AddBook extends Activity {
                             e.printStackTrace();
                         }
                         imageView.setImageBitmap(bmp);
-*/
+/
                         if (sTitle.equals("") || sISBN.equals("") || sCondition.equals("") || sPrice
                                 .equals("")) {
                             Toast.makeText(getApplicationContext(),"Some fields are empty!", Toast.LENGTH_LONG).show();
@@ -77,5 +77,5 @@ public class AddBook extends Activity {
                     }
                 }
         );
-    }
+    }*/
 }

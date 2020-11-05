@@ -19,7 +19,7 @@ public class Registration extends Activity {
     FirebaseDatabase database;// = FirebaseDatabase.getInstance();
     DatabaseReference myRef;// = database.getReference("user");
 
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration);
 
@@ -29,7 +29,7 @@ public class Registration extends Activity {
 
 
         email = (EditText)findViewById(R.id.editTextTextEmailAddress2);
-        hofID = (EditText)findViewById(R.id.editTextNumber2);
+        hofID = (EditText)findViewById(R.id.editTextid);
         //user = (EditText)findViewById(R.id.editTextTextPersonName2);
         pass = (EditText)findViewById(R.id.editTextTextPassword2);
 
@@ -50,9 +50,10 @@ public class Registration extends Activity {
                 String test = email.getText().toString(); //email reference, not user
                 String sPass = pass.getText().toString();
 
-                User help = new User(sEmail, sID, test, sPass, "Hey");
+                //User help = new User(sEmail, sID, test, sPass, "Hey");
 
-                myRef.child(sID).setValue(help);
+                //myRef.child(sID).setValue(help);
+                setContentView(R.layout.login);
                 }
         });
 

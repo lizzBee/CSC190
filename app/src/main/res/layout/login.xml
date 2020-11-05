@@ -12,12 +12,12 @@
         android:id="@+id/etUN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/username"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:autofillHints="@string/username"
+        android:textColor="#2E2727"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,11 +28,12 @@
         android:id="@+id/etPW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/password"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:autofillHints="@string/password"
+        android:textColor="#1E1B1B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +66,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
+        app:layout_constraintVertical_bias="0.896" />
 
     <Button
         android:id="@+id/btnCreateNewAccount"

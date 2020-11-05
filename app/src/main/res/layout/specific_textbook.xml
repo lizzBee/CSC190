@@ -98,7 +98,7 @@
 
     <TextView
         android:id="@+id/textView15"
-        style="@style/listing"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
@@ -118,12 +118,12 @@
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="100dp"
+        android:contentDescription="@string/my_listing"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/my_listing" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button10"
@@ -143,7 +143,7 @@
 
     <TextView
         android:id="@+id/textView20"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
@@ -155,7 +155,7 @@
 
     <TextView
         android:id="@+id/textView16"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
@@ -181,7 +181,7 @@
 
     <TextView
         android:id="@+id/textView21"
-        style="@style/listing_is"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
