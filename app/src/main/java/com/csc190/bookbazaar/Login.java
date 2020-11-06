@@ -3,90 +3,86 @@ package com.csc190.bookbazaar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.database.DatabaseError;
 
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Login extends Activity {
 
-    FirebaseDatabase database;// = FirebaseDatabase.getInstance();
-    DatabaseReference myRef;// = database.getReference("user");
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+    Button forgetPass, createAccount, login;
+    EditText username, pass;
+    FirebaseAuth mAuth;
 
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        Button forgetPass, createAccount, login;
-        final EditText username, password;
 
-        username = (EditText) findViewById(R.id.etUN);
-        password = (EditText) findViewById(R.id.etPW);
+
+
+        username = findViewById(R.id.etUN);
+        pass = findViewById(R.id.etPW);
 
         //forgetPass = (Button)findViewById(R.id.tvForgotPW);
-        createAccount = (Button)findViewById(R.id.btnCreateNewAccount);
-        login = (Button)findViewById(R.id.btnLogin);
+        createAccount = findViewById(R.id.btnCreateNewAccount);
+        login = findViewById(R.id.btnLogin);
 
+        mAuth = FirebaseAuth.getInstance();
+
+        //createAccount is a button
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 database = FirebaseDatabase.getInstance();
                 myRef = database.getReference("User");
-                setContentView(R.layout.registration);
+                startActivity(new Intent(getApplicationContext(), Registration.class));
             }
         });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                database = FirebaseDatabase.getInstance();
-                myRef = database.getReference("user");
+                String email = username.getText().toString();
+                String password = pass.getText().toString();
 
-                final String userNm = username.getEditableText().toString();
-                final String pass = password.getEditableText().toString();
-
-                if (userNm.equals("") || pass.equals("")) {
-                    Toast.makeText(getApplicationContext(), "Please Enter your Username and Password", Toast.LENGTH_LONG).show();
-                } else {
-
-                    FirebaseDatabase.getInstance().getReference().child("User").child(userNm)
-                            .addListenerForSingleValueEvent(new ValueEventListener() {
-                                @Override
-                                public void onDataChange(DataSnapshot dataSnapshot) {
-                                    String pass = password.getEditableText().toString();
-                                    // Get user information
-                                    if (dataSnapshot.exists()){
-                                        // the user does exist within the system
-                                        User us = dataSnapshot.getValue(User.class);
-                                        String userName = us.getHofstraID();
-                                        String passWord = us.getPass();
-                                        if (pass.equals(passWord)) {
-                                            // if it matches, login successful (redirect to home eventually)
-                                            Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_LONG).show();
-                                            //setContentView(R.layout.profile);
-                                        } else {
-                                            // if it doesn't match
-                                            Toast.makeText(getApplicationContext(), "Username and Password Do Not Match", Toast.LENGTH_LONG).show();
-                                        }
-                                    } else {
-                                        // no username in the system with that name
-                                        Toast.makeText(getApplicationContext(), "Could Not Find Account", Toast.LENGTH_LONG).show();
-                                    }
-                                }
-
-                                @Override
-                                public void onCancelled(DatabaseError databaseError) {
-                                }
-                            });
+                if(TextUtils.isEmpty(email)) {
+                    username.setError("Email is Required!");
+                    return;
                 }
-
+                if(TextUtils.isEmpty(password)) {
+                    pass.setError("Password is Required!");
+                    return;
+                }
+                //authenticate user
+                mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(Login.this, "Welcome to Book Bazaar", Toast.LENGTH_LONG).show();
+                            //setContentView(R.layout.login);
+                            startActivity(new Intent(getApplicationContext(), AddBook.class));
+                        }
+                        else {
+                            Toast.makeText(Login.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
             }
+
         });
+
     }
 }

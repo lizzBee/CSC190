@@ -2,23 +2,21 @@ package com.csc190.bookbazaar;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class AddBook extends Activity {
-/*
+
     FirebaseDatabase database;
     DatabaseReference myRef;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_book);
+    }
 
+/*
         //create button and textfields
         Button addbookButton;
         final EditText title, ISBN, condition, price;
