@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class SearchResults extends Activity {
+public class Home extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.specific_textbook);
+        setContentView(R.layout.home);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -24,9 +24,7 @@ public class SearchResults extends Activity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.tab_home:
-                        startActivity(new Intent(getApplicationContext(), Home.class));
-                        overridePendingTransition(0, 0);
-                        return true;
+                       return true;
                     case R.id.tab_starred:
                         startActivity(new Intent(getApplicationContext(), Starred.class));
                         overridePendingTransition(0, 0);

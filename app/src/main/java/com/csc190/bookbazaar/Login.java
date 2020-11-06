@@ -73,7 +73,7 @@ public class Login extends Activity {
                         if (task.isSuccessful()) {
                             Toast.makeText(Login.this, "Welcome to Book Bazaar", Toast.LENGTH_LONG).show();
                             //setContentView(R.layout.login);
-                            startActivity(new Intent(getApplicationContext(), AddBook.class));
+                            startActivity(new Intent(getApplicationContext(), Home.class));
                         }
                         else {
                             Toast.makeText(Login.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();

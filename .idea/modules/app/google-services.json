@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "773539745439-jihqeqbt2b130fa9djkk3ogj0pbbuomd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.csc190.bookbazaar",
+            "certificate_hash": "1020141c6f397c8ade575b05a26fbf6afaff0c56"
+          }
+        },
+        {
           "client_id": "773539745439-cmfdr6lltkvdgl3e28tl8k2vhvpfr230.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
