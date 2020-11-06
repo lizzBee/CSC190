@@ -1,0 +1,102 @@
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">My Application</string>\r\n    <string name=\"email\">Hofstra Email:</string>\r\n    <string name=\"registration\">Registration</string>\r\n    <string name=\"username\">Username:</string>\r\n    <string name=\"password\">Password:</string>\r\n    <string name=\"hof_id\">Hofstra ID:</string>\r\n    <string name=\"next\">Next Step</string>\r\n    <string name=\"input\"></string>\r\n    <string name=\"home_button\">Home</string>\r\n    <string name=\"starred_button\">Starred</string>\r\n    <string name=\"yl_button\">Your Listings</string>\r\n    <string name=\"profile_button\">Profile</string>\r\n    <string name=\"db\">DEPENDS ON DB</string>\r\n    <string name=\"verification\">Verify User Info</string>\r\n    <string name=\"new_pass\">New Password:</string>\r\n    <string name=\"new_usn\">New Username:</string>\r\n    <string name=\"my_listings\">My Listings</string>\r\n    <string name=\"edit_list\">Edit</string>\r\n    <string name=\"del_list\">Delete</string>\r\n    <string name=\"db_title\">Title DB</string>\r\n\r\n</resources>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision de3706377250c7c8ff33627e22ac7f64bf1959cc)
++++ app/src/main/res/values/strings.xml	(date 1603564280545)
+@@ -19,5 +19,10 @@
+     <string name="edit_list">Edit</string>
+     <string name="del_list">Delete</string>
+     <string name="db_title">Title DB</string>
++    <string name="new_title">new_title</string>
++    <string name="new_isbn">ISBN</string>
++    <string name="new_condition">Condition</string>
++    <string name="new_price">Price</string>
++    <string name="add_book">Add Book</string>
+ 
+ </resources>
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.csc190.bookbazaar\" >\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:fullBackupContent=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/AppTheme\" >\r\n\r\n        <activity android:name=\".Registration\" >\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision de3706377250c7c8ff33627e22ac7f64bf1959cc)
++++ app/src/main/AndroidManifest.xml	(date 1603564579229)
+@@ -11,7 +11,7 @@
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme" >
+ 
+-        <activity android:name=".Registration" >
++        <activity android:name=".AddBook" >
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+ 
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision de3706377250c7c8ff33627e22ac7f64bf1959cc)
++++ .idea/gradle.xml	(date 1604539704598)
+@@ -15,6 +15,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_7\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision de3706377250c7c8ff33627e22ac7f64bf1959cc)
++++ .idea/misc.xml	(date 1604539704558)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:4.0.1\"\r\n        classpath 'com.google.gms:google-services:4.3.4' // firebase console addition\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision de3706377250c7c8ff33627e22ac7f64bf1959cc)
++++ build.gradle	(date 1604539719716)
+@@ -5,7 +5,7 @@
+         jcenter()
+     }
+     dependencies {
+-        classpath "com.android.tools.build:gradle:4.0.1"
++        classpath 'com.android.tools.build:gradle:4.1.0'
+         classpath 'com.google.gms:google-services:4.3.4' // firebase console addition
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
+Index: .idea/compiler.xml
+===================================================================
+--- .idea/compiler.xml	(date 1604539704585)
++++ .idea/compiler.xml	(date 1604539704585)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.8" />
++  </component>
++</project>
+\ No newline at end of file

@@ -3,6 +3,10 @@
     package="com.csc190.bookbazaar" >
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk android:minSdkVersion="25"
+                android:maxSdkVersion="30"
+            android:targetSdkVersion="30"
+        />
 
     <application
         android:allowBackup="true"

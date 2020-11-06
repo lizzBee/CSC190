@@ -1,0 +1,654 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1" date="1604540255230" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 11/4/2020 8:36 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/processed_res/debug/out/resources-debug.ap_" />
+    <option name="AFTER_PATH" value="app/build/intermediates/processed_res/debug/out/resources-debug.ap_" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/resources-debug.ap_" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-cs_values-cs.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-xlarge-v4_values-xlarge-v4.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-mn_values-mn.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-en-rIN_values-en-rIN.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-sq_values-sq.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ky_values-ky.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values_values.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values_values.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values_values.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-en-rXC_values-en-rXC.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-en-rXC_values-en-rXC.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-en-rXC_values-en-rXC.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-th_values-th.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-nl_values-nl.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-bn_values-bn.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-pa_values-pa.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-kk_values-kk.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ldltr-v21_values-ldltr-v21.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ta_values-ta.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/merged_java_res/debug/out.jar" />
+    <option name="AFTER_PATH" value="app/build/intermediates/merged_java_res/debug/out.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/out.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ne_values-ne.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-hi_values-hi.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-bg_values-bg.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-gl_values-gl.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-pt-rPT_values-pt-rPT.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-lo_values-lo.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/Book.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/Book.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/Book.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-lv_values-lv.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-be_values-be.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-be_values-be.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-be_values-be.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-iw_values-iw.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/User.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/User.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/User.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-hdpi-v4_values-hdpi-v4.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-en-rAU_values-en-rAU.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-si_values-si.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-si_values-si.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-si_values-si.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-watch-v21_values-watch-v21.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-watch-v21_values-watch-v21.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-watch-v21_values-watch-v21.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-it_values-it.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-b+sr+Latn_values-b+sr+Latn.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/Registration.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/Registration.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/Registration.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-vi_values-vi.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/javaResources0" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-zh-rHK_values-zh-rHK.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-en-rCA_values-en-rCA.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-en-rCA_values-en-rCA.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-en-rCA_values-en-rCA.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-da_values-da.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-hy_values-hy.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/Registration$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/Registration$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/Registration$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v26_values-v26.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v26_values-v26.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v26_values-v26.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/classes.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-gu_values-gu.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-land_values-land.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-is_values-is.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-is_values-is.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-is_values-is.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-or_values-or.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-or_values-or.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-or_values-or.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/classes.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-fa_values-fa.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/MainActivity.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/MainActivity.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/MainActivity.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-es-rUS_values-es-rUS.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v25_values-v25.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v25_values-v25.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v25_values-v25.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/layout_starred.xml.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/layout_starred.xml.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/layout_starred.xml.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ms_values-ms.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-eu_values-eu.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-et_values-et.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-et_values-et.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-et_values-et.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-sr_values-sr.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-tl_values-tl.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ja_values-ja.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v18_values-v18.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/layout_profile.xml.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/layout_profile.xml.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/layout_profile.xml.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ur_values-ur.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/layout_edit_profile.xml.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/layout_edit_profile.xml.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/layout_edit_profile.xml.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/merge-state" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v24_values-v24.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-en-rGB_values-en-rGB.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-zh-rCN_values-zh-rCN.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ca_values-ca.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ro_values-ro.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-my_values-my.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-my_values-my.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-my_values-my.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/MainActivity.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/MainActivity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/MainActivity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v17_values-v17.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v17_values-v17.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v17_values-v17.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-as_values-as.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-as_values-as.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-as_values-as.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-pl_values-pl.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex_archive_input_jar_hashes/debug/out" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex_archive_input_jar_hashes/debug/out" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/out" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-kn_values-kn.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-lt_values-lt.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-zu_values-zu.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-mr_values-mr.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-az_values-az.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-az_values-az.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-az_values-az.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-mk_values-mk.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-fi_values-fi.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ko_values-ko.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-es_values-es.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/Book.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/Book.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/Book.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-nb_values-nb.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-h720dp-v13_values-h720dp-v13.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-fr-rCA_values-fr-rCA.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-am_values-am.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/Registration.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/csc190/bookbazaar/Registration.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/Registration.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-watch-v20_values-watch-v20.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-el_values-el.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-fr_values-fr.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/merge-state" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-af_values-af.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ru_values-ru.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v21_values-v21.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-de_values-de.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-pt-rBR_values-pt-rBR.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/androidResources" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ar_values-ar.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-bs_values-bs.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ml_values-ml.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-sv_values-sv.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-uk_values-uk.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/Registration$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/Registration$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/Registration$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-sk_values-sk.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-hr_values-hr.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-uz_values-uz.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v23_values-v23.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v23_values-v23.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v23_values-v23.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-sw_values-sw.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-port_values-port.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v16_values-v16.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-pt_values-pt.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/outputs/apk/debug/app-debug.apk" />
+    <option name="AFTER_PATH" value="app/build/outputs/apk/debug/app-debug.apk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/app-debug.apk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-hu_values-hu.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/User.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/csc190/bookbazaar/User.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/User.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-large-v4_values-large-v4.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v22_values-v22.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v22_values-v22.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v22_values-v22.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-te_values-te.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-te_values-te.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-te_values-te.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-in_values-in.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-km_values-km.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-km_values-km.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-km_values-km.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-zh-rTW_values-zh-rTW.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-night-v8_values-night-v8.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-night-v8_values-night-v8.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-night-v8_values-night-v8.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-v28_values-v28.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-v28_values-v28.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-v28_values-v28.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-sl_values-sl.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-tr_values-tr.arsc.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_4_2020_8_36_PM_[Default_Changelist]1/values-ka_values-ka.arsc.flat" />
+  </binary>
+</changelist>

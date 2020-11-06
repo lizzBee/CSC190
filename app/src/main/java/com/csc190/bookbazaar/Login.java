@@ -71,12 +71,12 @@ public class Login extends Activity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(Login.this, "Welcome to Book Bazaar", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Login.this, "Welcome to Book Bazaar", Toast.LENGTH_SHORT).show();
                             //setContentView(R.layout.login);
                             startActivity(new Intent(getApplicationContext(), Home.class));
                         }
                         else {
-                            Toast.makeText(Login.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(Login.this, "Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
