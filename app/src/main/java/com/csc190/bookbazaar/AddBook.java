@@ -1,20 +1,76 @@
 package com.csc190.bookbazaar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class AddBook extends Activity {
 
-    FirebaseDatabase database;
-    DatabaseReference myRef;
+    private FirebaseAuth mAuth;
+    FirebaseDatabase database;// = FirebaseDatabase.getInstance();
+    DatabaseReference myRef;// =
+    FirebaseFirestore fStore;
+    String bookID;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_book);
-    }
+
+        mAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+        database = FirebaseDatabase.getInstance();
+        final EditText title, isbn, price, cond;
+        Button addButton;
+        addButton = findViewById(R.id.button12);
+        final String TAG = Registration.class.getSimpleName();
+
+        title = findViewById(R.id.editTextTextPersonName2);//get rid of this?
+        isbn = findViewById(R.id.editTextTextPersonName4);
+        //cond = findViewById(R.id.editTextTextPersonName2); //dropdown?
+        price = findViewById(R.id.editTextTextPersonName6); //price oriented edit text?
+        //right now this is accessible from the "edit" button on the my listing interface
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bookID = "111";
+                //  final String bookTitle = title.getText().toString().trim();
+                final String bookISBN = isbn.getText().toString();
+                // final String bookCond = user.getText().toString();
+                final String bookPrice = price.getText().toString().trim();
+                DocumentReference bookRef = fStore.collection("books").document(bookID);
+                DocumentReference userRef = fStore.collection("users").document(bookID);
+                Map<String, Object> book = new HashMap<>();
+                book.put("Title", "Brave New World"); //pull these two fields from isbn?
+                book.put("Author","Aldous Huxley");
+                book.put("ISBN", bookISBN);
+                book.put("Price", bookPrice);
+                //add book to user list?
+                bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
+                     @Override
+                     public void onSuccess(Void aVoid) {
+                         Log.d(TAG, "book has been created for isbn:" + bookISBN);
+                         startActivity(new Intent(getApplicationContext(), my_listing.class));
+                     }});
+
+            }
+
+        });
 
 /*
         //create button and textfields
@@ -76,4 +132,5 @@ public class AddBook extends Activity {
                 }
         );
     }*/
+    }
 }
