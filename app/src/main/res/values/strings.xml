@@ -41,6 +41,7 @@
     <string name="posted_by">Posted By:</string>
     <string name="textbook_title">Title</string>
     <string name="my_listing" />
+    <string name="old_pass">Old Password:</string>
 
 
 </resources>
