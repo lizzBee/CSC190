@@ -17,7 +17,7 @@ public class Home extends Activity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setSelectedItemId(R.id.tab_starred);
+        bottomNavigationView.setSelectedItemId(R.id.tab_home);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
