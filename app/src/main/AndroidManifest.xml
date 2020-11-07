@@ -20,6 +20,7 @@
         <activity android:name=".Starred"/>
         <activity android:name=".my_listing"/>
         <activity android:name=".Profile"/>
+        <activity android:name=".EditProfile"/>
         <activity android:name=".SearchResults"/>
         <activity android:name=".SpecificTextbook"/>
         <activity android:name=".AddBook"/>
