@@ -22,7 +22,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Registration extends Activity {
@@ -69,6 +71,8 @@ public class Registration extends Activity {
                 final String ID = hofID.getText().toString();
                 final String username = user.getText().toString();
                 final String password = pass.getText().toString().trim();
+                final List<String> starred = new ArrayList<String>();
+                final List<String> listings = new ArrayList<String>();
                 if(TextUtils.isEmpty(email)) {
                     BarEmail.setError("Email is Required!");
                     return;
@@ -94,6 +98,8 @@ public class Registration extends Activity {
                             user.put("Email", email);
                             user.put("HofstraID", ID);
                             user.put("username", username);
+                            user.put("Starred",starred);
+                            user.put("Listing", listings);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
