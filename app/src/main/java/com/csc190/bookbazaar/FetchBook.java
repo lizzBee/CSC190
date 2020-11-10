@@ -1,15 +1,18 @@
 package com.csc190.bookbazaar;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -39,10 +42,13 @@ public class FetchBook extends AsyncTask<String,Void,String>{
     private String Price;
     FirebaseFirestore fStore;
     private FirebaseAuth mAuth;
+    DatabaseReference myRef;
+    DocumentReference bookRef;
     ;
     public String query = "";
     // Class name for Log tag
     private static final String LOG_TAG = FetchBook.class.getSimpleName();
+    public String bookID;
 
 
     // Constructor providing a reference to the views in MainActivity
@@ -82,7 +88,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
 
             // Build up your query URI, limiting results to 10 items and printed books.
             Uri builtURI = Uri.parse(BOOK_BASE_URL).buildUpon()
-                   // .appendQueryParameter(QUERY_PARAM, queryString)
+                    // .appendQueryParameter(QUERY_PARAM, queryString)
                     /*.appendQueryParameter(MAX_RESULTS, "10")
                     .appendQueryParameter(PRINT_TYPE, "books")*/
                     .build();
@@ -151,79 +157,96 @@ public class FetchBook extends AsyncTask<String,Void,String>{
         super.onPostExecute(bookISBN);
         fStore = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
+        myRef = FirebaseDatabase.getInstance().getReference("BookID/id");
         String userID = mAuth.getCurrentUser().getUid();
-        DocumentReference userRef = fStore.collection("users").document(userID);
-        try {
-            String bookID = "113";
-            DocumentReference bookRef = fStore.collection("books").document(bookID);
-            // Convert the response into a JSON object.
-            JSONObject jsonObject = new JSONObject(bookISBN);
-            // Get the JSONArray of book items.
-            JSONArray itemsArray = jsonObject.getJSONArray("items");
-
-            // Initialize iterator and results fields.
-            int i = 0;
-            String title = null;
-            String authors = null;
-
-            // Look for results in the items array, exiting when both the title and author
-            // are found or when all items have been checked.
-            while (i < itemsArray.length() || (authors == null && title == null)) {
-                // Get the current item information.
-                JSONObject book = itemsArray.getJSONObject(i);
-                JSONObject volumeInfo = book.getJSONObject("volumeInfo");
-
-                // Try to get the author and title from the current item,
-                // catch if either field is empty and move on.
+        final DocumentReference userRef = fStore.collection("users").document(userID);
+        
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                bookID = snapshot.getValue().toString();
+                int idNum = Integer.parseInt(bookID)+1;
+                myRef.setValue(String.valueOf(idNum));
+                //myRef.setValue("1");
+                bookRef = fStore.collection("books").document(bookID);
+                Log.w(TAG, bookID);
                 try {
-                    title = volumeInfo.getString("title");
-                    authors = volumeInfo.getString("authors");
-                    //isbn = volumeInfo.getString("ISBN");
+                    // bookRef = fStore.collection("books").document(bookID);
+                    // Convert the response into a JSON object.
+                    JSONObject jsonObject = new JSONObject(bookISBN);
+                    // Get the JSONArray of book items.
+                    JSONArray itemsArray = jsonObject.getJSONArray("items");
+
+                    // Initialize iterator and results fields.
+                    int i = 0;
+                    String title = null;
+                    String authors = null;
+
+                    // Look for results in the items array, exiting when both the title and author
+                    // are found or when all items have been checked.
+                    while (i < itemsArray.length() || (authors == null && title == null)) {
+                        // Get the current item information.
+                        JSONObject book = itemsArray.getJSONObject(i);
+                        JSONObject volumeInfo = book.getJSONObject("volumeInfo");
+
+                        // Try to get the author and title from the current item,
+                        // catch if either field is empty and move on.
+                        try {
+                            title = volumeInfo.getString("title");
+                            authors = volumeInfo.getString("authors");
+                            //isbn = volumeInfo.getString("ISBN");
+                        } catch (Exception e){
+                            e.printStackTrace();
+                        }
+
+                        // Move to the next item.
+                        i++;
+                    }
+
+                    // If both are found, display the result.
+                    if (title != null && authors != null){
+                        userRef.update("Listing", FieldValue.arrayUnion(bookID));
+                        Map<String, Object> book = new HashMap<>();
+                        book.put("Title", title); //pull these two fields from isbn?
+                        book.put("Author",authors);
+                        book.put("ISBN", query);
+                        book.put("Condition", Condition);
+                        book.put("Price", Price);
+                        bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Log.d(TAG, "book has been created for isbn:" + bookISBN);
+
+                            }});
+                        //Toast.makeText(AddBook.this, "WE GOT THIS FAR", Toast.LENGTH_LONG)
+                    } else {
+                        Map<String, Object> book = new HashMap<>();
+                        book.put("Title", title); //pull these two fields from isbn?
+                        book.put("Author",authors);
+                        book.put("ISBN", query);
+                        book.put("Condition", Condition);
+                        book.put("Price", Price);
+                        bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Log.d(TAG, "book has been created for isbn:" + bookISBN);
+
+                            }});
+                    }
+
                 } catch (Exception e){
+                    // If onPostExecute does not receive a proper JSON string,
+                    // update the UI to show failed results.
+                    //mTitleText.setText("no_results");
+                    //mAuthorText.setText("");
                     e.printStackTrace();
                 }
-
-                // Move to the next item.
-                i++;
             }
 
-            // If both are found, display the result.
-            if (title != null && authors != null){
-                userRef.update("Listing", "12");//FieldValue.arrayUnion(bookID));
-                Map<String, Object> book = new HashMap<>();
-                book.put("Title", title); //pull these two fields from isbn?
-                book.put("Author",authors);
-                book.put("ISBN", query);
-                book.put("Condition", Condition);
-                book.put("Price", Price);
-                bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "book has been created for isbn:" + bookISBN);
-
-                    }});
-                //Toast.makeText(AddBook.this, "WE GOT THIS FAR", Toast.LENGTH_LONG)
-            } else {
-                Map<String, Object> book = new HashMap<>();
-                book.put("Title", title); //pull these two fields from isbn?
-                book.put("Author",authors);
-                book.put("ISBN", query);
-                book.put("Condition", Condition);
-                book.put("Price", Price);
-                bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "book has been created for isbn:" + bookISBN);
-
-                    }});
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.w(TAG, "loadPost:onCancelled", error.toException());
             }
-
-        } catch (Exception e){
-            // If onPostExecute does not receive a proper JSON string,
-            // update the UI to show failed results.
-            //mTitleText.setText("no_results");
-            //mAuthorText.setText("");
-            e.printStackTrace();
-        }
+        });
     }
 }
