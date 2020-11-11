@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -13,7 +12,6 @@
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:layout_marginTop="68dp"
         android:autofillHints="@string/input"
         android:background="@drawable/my_border"
@@ -46,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="321dp"
-        android:text="@string/new_isbn"
+        android:text="@string/isbn_is"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +75,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="271dp"
-        android:text="@string/new_condition"
+        android:text="@string/condition_is"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -89,14 +87,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="317dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/new_price"
+        android:text="@string/price_is"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cond_spinner" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -120,10 +120,8 @@
         android:layout_width="110dp"
         android:layout_height="46dp"
         android:layout_marginStart="268dp"
-        android:layout_marginLeft="268dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/my_button"
         android:text="@string/add_book"
@@ -137,16 +135,31 @@
         android:id="@+id/cond_spinner"
         android:layout_width="365dp"
         android:layout_height="46dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
-        android:popupBackground="@drawable/my_border"
         android:background="@drawable/my_border"
+        android:popupBackground="@drawable/my_border"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView26"
+        style="@style/Title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="49dp"
+        android:text="@string/add_book"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
