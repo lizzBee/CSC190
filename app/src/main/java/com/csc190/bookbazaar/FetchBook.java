@@ -14,7 +14,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.json.JSONArray;
@@ -38,16 +37,14 @@ import static android.content.ContentValues.TAG;
 public class FetchBook extends AsyncTask<String,Void,String>{
 
     // Variables for the search input field, and results TextViews
-    private String Condition;
-    private String Price;
+    private final String Condition;
+    private final String Price;
     FirebaseFirestore fStore;
-    private FirebaseAuth mAuth;
     DatabaseReference myRef;
     DocumentReference bookRef;
-    ;
     public String query = "";
     // Class name for Log tag
-    private static final String LOG_TAG = FetchBook.class.getSimpleName();
+   // private static final String LOG_TAG = FetchBook.class.getSimpleName();
     public String bookID;
 
 
@@ -156,10 +153,10 @@ public class FetchBook extends AsyncTask<String,Void,String>{
     protected void onPostExecute(final String bookISBN) {
         super.onPostExecute(bookISBN);
         fStore = FirebaseFirestore.getInstance();
-        mAuth = FirebaseAuth.getInstance();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
         myRef = FirebaseDatabase.getInstance().getReference("BookID/id");
-        String userID = mAuth.getCurrentUser().getUid();
-        final DocumentReference userRef = fStore.collection("users").document(userID);
+        final String userID = mAuth.getCurrentUser().getUid();
+       // final DocumentReference userRef = fStore.collection("users").document(userID);
         
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -205,13 +202,14 @@ public class FetchBook extends AsyncTask<String,Void,String>{
 
                     // If both are found, display the result.
                     if (title != null && authors != null){
-                        userRef.update("Listing", FieldValue.arrayUnion(bookID));
+                       // userRef.update("Listing", FieldValue.arrayUnion(bookID)); //dont need this
                         Map<String, Object> book = new HashMap<>();
                         book.put("Title", title); //pull these two fields from isbn?
                         book.put("Author",authors);
                         book.put("ISBN", query);
                         book.put("Condition", Condition);
                         book.put("Price", Price);
+                        book.put("Owner", userID);
                         bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
