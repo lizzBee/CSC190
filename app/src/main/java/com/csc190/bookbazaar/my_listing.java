@@ -2,37 +2,32 @@ package com.csc190.bookbazaar;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class my_listing extends AppCompatActivity {
-    FirebaseDatabase database;// = FirebaseDatabase.getInstance();
-    DatabaseReference myRef;// = database.getReference("user");
+    FirebaseDatabase database;
     FirebaseAuth mAuth;
     FirebaseFirestore fStore;
     FirebaseUser user;
     //CollectionReference docRef;
     DocumentReference docRef;
+    CollectionReference bookRef;
+    RecyclerView recyclerview;
     private static final String TAG =my_listing.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,34 +35,22 @@ public class my_listing extends AppCompatActivity {
         setContentView(R.layout.my_listing);
         user = FirebaseAuth.getInstance().getCurrentUser();
         database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("User"); // .child(user_key) to get the user logged in
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-        docRef = fStore.collection("users").document(user.getUid()); //.collection("Listing");
+        //docRef = fStore.collection("users").document(user.getUid()); //.collection("Listing");
+        bookRef = fStore.collection("books"); //.collection("Listing");
+      //  Query query = bookRef.where("Owner", "==", mAuth.getUid());
+        // need to make a query to fetch results for recycleview ^this doesnt work
 
-        String listings; //get listing ids
-        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if(task.isSuccessful()) {
-                    DocumentSnapshot documentSnapshot = task.getResult();
-                    ArrayList<String> list = (ArrayList<String>) documentSnapshot.get("Listing");
-                    Log.d(TAG, list.toString());
-                }
-            }
-        });
 
-        /*database.collection("cities").where("capital", "==", true)
-                .get()
-                .then(function(querySnapshot) {
-            querySnapshot.forEach(function(doc) {
-                // doc.data() is never undefined for query doc snapshots
-                console.log(doc.id, " => ", doc.data());
-            });
-        })
-    .catch(function(error) {
-            console.log("Error getting documents: ", error);
-        });*/
+        recyclerview =  findViewById(R.id.booklist_ml);
+        recyclerview.setLayoutManager(
+                new LinearLayoutManager(this));
+/*
+        FirebaseRecyclerOptions<Book> options
+                = new FirebaseRecyclerOptions.Builder<Book>()
+                .setQuery(???, book.class)
+                .build();*/
         Button addButton;
         addButton = findViewById(R.id.button8);
         addButton.setOnClickListener(new View.OnClickListener() {
@@ -103,3 +86,36 @@ public class my_listing extends AppCompatActivity {
         });
     }
 }
+
+/* this is useless now but it may be useful for search
+docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@ NonNull Task<DocumentSnapshot> task) {
+                if(task.isSuccessful()) {
+                   DocumentSnapshot documentSnapshot = task.getResult();
+                    ArrayList<String> listings = (ArrayList<String>) documentSnapshot.get("Listing");
+                    Log.d(TAG, listings.toString());
+
+
+                    for (String l : listings) {
+                        bookRef = fStore.collection("books").document(l);
+
+                        bookRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                            @Override //put this info in BOOK
+                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                String title,price,cond;
+                                DocumentSnapshot bookSnapshot = task.getResult();
+                                title  = bookSnapshot.getString("Title");
+                               // title.setText(snaptitle);
+                                price = bookSnapshot.getString("Price");
+                               // price.setText(snapprice);
+                                cond = bookSnapshot.getString("Condition");
+                              //  condition.setText(snapcond);
+                                Book listBook = new Book(title,price,cond);
+                              //  book_layout(listBook);
+                            }
+                        });
+                    }
+                }
+            }
+        });*/
