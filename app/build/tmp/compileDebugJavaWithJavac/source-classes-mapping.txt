@@ -1,5 +1,5 @@
-com/csc190/bookbazaar/Book.java
- com.csc190.bookbazaar.Book
+com/csc190/bookbazaar/MainActivity.java
+ com.csc190.bookbazaar.MainActivity
 com/csc190/bookbazaar/edit_profile.java
  com.csc190.bookbazaar.edit_profile
 com/csc190/bookbazaar/Login.java
@@ -9,49 +9,47 @@ com/csc190/bookbazaar/Login.java
  com.csc190.bookbazaar.Login$2$1
 com/csc190/bookbazaar/SpecificTextbook.java
  com.csc190.bookbazaar.SpecificTextbook
-com/csc190/bookbazaar/book_layout.java
- com.csc190.bookbazaar.book_layout
- com.csc190.bookbazaar.book_layout$bookViewHolder
-com/csc190/bookbazaar/Starred.java
- com.csc190.bookbazaar.Starred
- com.csc190.bookbazaar.Starred$1
-com/csc190/bookbazaar/AddBook.java
- com.csc190.bookbazaar.AddBook
- com.csc190.bookbazaar.AddBook$1
-com/csc190/bookbazaar/EditProfile.java
- com.csc190.bookbazaar.EditProfile
- com.csc190.bookbazaar.EditProfile$1
- com.csc190.bookbazaar.EditProfile$1$1
-com/csc190/bookbazaar/my_listing.java
- com.csc190.bookbazaar.my_listing
- com.csc190.bookbazaar.my_listing$1
- com.csc190.bookbazaar.my_listing$2
- com.csc190.bookbazaar.my_listing$3
- com.csc190.bookbazaar.my_listing$bookViewHolder
-com/csc190/bookbazaar/MainActivity.java
- com.csc190.bookbazaar.MainActivity
-com/csc190/bookbazaar/SearchResults.java
- com.csc190.bookbazaar.SearchResults
- com.csc190.bookbazaar.SearchResults$1
-com/csc190/bookbazaar/User.java
- com.csc190.bookbazaar.User
-com/csc190/bookbazaar/Profile.java
- com.csc190.bookbazaar.Profile
- com.csc190.bookbazaar.Profile$1
- com.csc190.bookbazaar.Profile$2
- com.csc190.bookbazaar.Profile$3
+com/csc190/bookbazaar/BuildConfig.java
+ com.csc190.bookbazaar.BuildConfig
 com/csc190/bookbazaar/Registration.java
  com.csc190.bookbazaar.Registration
  com.csc190.bookbazaar.Registration$1
  com.csc190.bookbazaar.Registration$1$1
  com.csc190.bookbazaar.Registration$1$1$1
-com/csc190/bookbazaar/Home.java
- com.csc190.bookbazaar.Home
- com.csc190.bookbazaar.Home$1
-com/csc190/bookbazaar/BuildConfig.java
- com.csc190.bookbazaar.BuildConfig
+com/csc190/bookbazaar/EditProfile.java
+ com.csc190.bookbazaar.EditProfile
+ com.csc190.bookbazaar.EditProfile$1
+ com.csc190.bookbazaar.EditProfile$1$1
+com/csc190/bookbazaar/User.java
+ com.csc190.bookbazaar.User
+com/csc190/bookbazaar/Book.java
+ com.csc190.bookbazaar.Book
 com/csc190/bookbazaar/FetchBook.java
  com.csc190.bookbazaar.FetchBook
  com.csc190.bookbazaar.FetchBook$1
  com.csc190.bookbazaar.FetchBook$1$1
  com.csc190.bookbazaar.FetchBook$1$2
+com/csc190/bookbazaar/SearchResults.java
+ com.csc190.bookbazaar.SearchResults
+ com.csc190.bookbazaar.SearchResults$1
+com/csc190/bookbazaar/Profile.java
+ com.csc190.bookbazaar.Profile
+ com.csc190.bookbazaar.Profile$1
+ com.csc190.bookbazaar.Profile$2
+ com.csc190.bookbazaar.Profile$3
+com/csc190/bookbazaar/Home.java
+ com.csc190.bookbazaar.Home
+ com.csc190.bookbazaar.Home$1
+com/csc190/bookbazaar/AddBook.java
+ com.csc190.bookbazaar.AddBook
+ com.csc190.bookbazaar.AddBook$1
+com/csc190/bookbazaar/Starred.java
+ com.csc190.bookbazaar.Starred
+ com.csc190.bookbazaar.Starred$1
+com/csc190/bookbazaar/my_listing.java
+ com.csc190.bookbazaar.my_listing
+ com.csc190.bookbazaar.my_listing$1
+ com.csc190.bookbazaar.my_listing$1$1
+ com.csc190.bookbazaar.my_listing$2
+ com.csc190.bookbazaar.my_listing$3
+ com.csc190.bookbazaar.my_listing$bookViewHolder

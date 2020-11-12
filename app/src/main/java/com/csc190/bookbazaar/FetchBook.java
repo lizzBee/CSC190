@@ -210,6 +210,8 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                         book.put("Condition", Condition);
                         book.put("Price", Price);
                         book.put("Owner", userID);
+                        book.put("Image", "http://covers.openlibrary.org/b/isbn/" + query +"-M.jpg");
+                        book.put("ID", bookID);
                         bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
@@ -224,6 +226,8 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                         book.put("ISBN", query);
                         book.put("Condition", Condition);
                         book.put("Price", Price);
+                        book.put("Image", "http://covers.openlibrary.org/b/isbn/" + query +"-M.jpg");
+                        book.put("ID", bookID);
                         bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

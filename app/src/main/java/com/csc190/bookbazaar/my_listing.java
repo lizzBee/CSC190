@@ -2,13 +2,13 @@ package com.csc190.bookbazaar;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,9 +26,7 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-
-import static android.content.ContentValues.TAG;
+import com.squareup.picasso.Picasso;
 
 
 public class my_listing extends AppCompatActivity {
@@ -43,6 +40,7 @@ public class my_listing extends AppCompatActivity {
     RecyclerView recyclerview;
     FirestoreRecyclerAdapter adapter;
     private static final String TAG =my_listing.class.getSimpleName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,10 +50,8 @@ public class my_listing extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        Query query = fStore.collection("books"); //.whereEqualTo("Owner", mAuth.getUid());
+        Query query = fStore.collection("books").whereEqualTo("Owner", mAuth.getUid());
         recyclerview = findViewById(R.id.booklist_ml);
-      //  recyclerview.setLayoutManager(
-        //        new LinearLayoutManager(this));
 
         FirestoreRecyclerOptions<Book> options = new FirestoreRecyclerOptions.Builder<Book>()
                 .setQuery(query, Book.class)
@@ -70,13 +66,19 @@ public class my_listing extends AppCompatActivity {
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull bookViewHolder holder, int position, @NonNull Book model) {
+            protected void onBindViewHolder(@NonNull bookViewHolder holder, int position, @NonNull final Book model) {
                 Log.w(TAG, model.getTitle() +" "  +model.getPrice()  + " !!!!!!!!!!!");
                 holder.title.setText(model.getTitle());
                 holder.price.setText(model.getPrice());
                 holder.condition.setText(model.getCondition());
+                Picasso.with(getApplicationContext()).load(model.getImage()).into(holder.image);
+                holder.deleteButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        fStore.collection("books").document(model.getID()).delete();
+                    }
+                });
             }
-
         };
 
 //        adapter = new book_layout(options);
@@ -122,11 +124,16 @@ public class my_listing extends AppCompatActivity {
     }
     class bookViewHolder extends RecyclerView.ViewHolder {
         TextView title, price, condition;
+        ImageView image;
+        Button deleteButton;
         public bookViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title_bl);
             price = itemView.findViewById(R.id.price_bl);
             condition = itemView.findViewById(R.id.condition_bl);
+            image = itemView.findViewById(R.id.imageView3);
+            deleteButton = itemView.findViewById(R.id.buttondelete);
+
         }
     }
     @Override protected void onStart()

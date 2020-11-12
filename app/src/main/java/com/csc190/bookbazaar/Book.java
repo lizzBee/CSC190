@@ -5,19 +5,40 @@ package com.csc190.bookbazaar;
 //how to show book on home screen? store book in an array?
 
 public class Book {
-    private String Title, Author, ISBN, Condition, Price, Owner;
+    private String Title, Author, ISBN, Condition, Price, Owner, Image, ID;
     String api = "AIzaSyCVDsAsNnZWvztoozZMSObD4WxPvnZ1L7E";
 
     //OpenBooks for images: http://covers.openlibrary.org/b/isbn/" + book.ISBN +"-M.jpg"
     public Book() {
     }
-    public Book(String cond, String pix, String prix, String bookTitle) {
+
+
+
+
+    public Book(String cond, String pix, String prix, String bookTitle, String Image, String ID) {
         this.Title = bookTitle;
         //ISBN = ISBNnum;
         this.Condition = cond;
         this.Price = prix;
-      //  this.Picture = pix;
+        this.Image = Image;
+        this.ID = ID;
        // hofstraID = hofID;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
     }
 
     public void setTitle(String title) {
