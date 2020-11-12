@@ -1955,6 +1955,8 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchButton
+id searchRecycler
 id search_badge
 id search_bar
 id search_bar_ml
@@ -1964,8 +1966,10 @@ id search_edit_frame
 id search_go_btn
 id search_mag_icon
 id search_plate
+id search_results
 id search_src_text
 id search_voice_btn
+id searchbar
 id select_dialog_listview
 id selected
 id shortcut

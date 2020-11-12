@@ -71,7 +71,7 @@ public class my_listing extends AppCompatActivity {
                 holder.title.setText(model.getTitle());
                 holder.price.setText(model.getPrice());
                 holder.condition.setText(model.getCondition());
-                Picasso.with(getApplicationContext()).load(model.getImage()).into(holder.image);
+                Picasso.with(getApplicationContext()).load(model.getImage()).into(holder.image); //gets image from URL
                 holder.deleteButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -120,7 +120,6 @@ public class my_listing extends AppCompatActivity {
                 return false;
             }
         });
-
     }
     class bookViewHolder extends RecyclerView.ViewHolder {
         TextView title, price, condition;

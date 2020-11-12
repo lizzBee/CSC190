@@ -4,16 +4,41 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends Activity {
+    EditText searchBar;
+    ImageButton searchButton;
+    String searchText;
+    //FirebaseFirestore fStore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+
+        searchBar= findViewById(R.id.searchbar);
+        searchButton = findViewById(R.id.searchButton);
+
+
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                searchText = searchBar.getText().toString();
+                Intent intent = new Intent(Home.this, SearchResults.class);
+                intent.putExtra("search", searchText);
+                if(!searchText.equals(""))
+                    startActivity(intent);
+            }
+        });
+
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 

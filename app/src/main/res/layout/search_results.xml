@@ -21,7 +21,7 @@
 
     <!--android:gravity="bottom|center_horizontal"-->
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/search_results"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_marginTop="56dp"
@@ -51,6 +51,15 @@
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecycler"
+        android:layout_width="409dp"
+        android:layout_height="572dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
