@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toStartOf="@+id/price_bl"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/picture_bl"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/title_bl" />
 
     <TextView
         android:id="@+id/textView28"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/title_bl"
         style="@style/Title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
         app:layout_constraintStart_toEndOf="@+id/picture_bl" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/buttondelete"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginBottom="440dp"

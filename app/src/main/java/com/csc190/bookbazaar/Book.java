@@ -5,76 +5,74 @@ package com.csc190.bookbazaar;
 //how to show book on home screen? store book in an array?
 
 public class Book {
-    String title, ISBN, price, condition, hofstraID;
-    String picture;
+    private String Title, Author, ISBN, Condition, Price, Owner;
     String api = "AIzaSyCVDsAsNnZWvztoozZMSObD4WxPvnZ1L7E";
-    private boolean isStarred;
 
     //OpenBooks for images: http://covers.openlibrary.org/b/isbn/" + book.ISBN +"-M.jpg"
-
-    public Book(String bookTitle, String ISBNnum, String cond, String prix, String pix, String hofID) {
-        title = bookTitle;
-        ISBN = ISBNnum;
-        condition = cond;
-        price = prix;
-        picture = pix;
-        hofstraID = hofID;
-        isStarred = false;
+    public Book() {
+    }
+    public Book(String cond, String pix, String prix, String bookTitle) {
+        this.Title = bookTitle;
+        //ISBN = ISBNnum;
+        this.Condition = cond;
+        this.Price = prix;
+      //  this.Picture = pix;
+       // hofstraID = hofID;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.Title = title;
+    }
+
+  /*  public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
+        public String getISBN() {
+        return ISBN;
+    }}*/
+
+
+    public String getAuthor() {
+        return Author;
+    }
+
+    public void setAuthor(String author) {
+        Author = author;
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public String getCondition() {
+        return Condition;
+    }
+
+
+    public String getISBN() {
+        return ISBN;
     }
 
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public String getOwner() {
+        return Owner;
     }
 
-    public void setCondition(String condition) {
-        this.condition = condition;
+    public void setOwner(String owner) {
+        Owner = owner;
     }
 
-    public void setPicture(String pic) {this.picture = pic;}
-
-    public String getPicture() {return picture;}
-    public void setHofstraID(String hofstraID) {
-        this.hofstraID = hofstraID;
+    public String getApi() {
+        return api;
     }
 
-    public void setStarred(boolean starred) {
-        isStarred = starred;
+    public void setApi(String api) {
+        this.api = api;
     }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getISBN() {
-        return ISBN;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public String getCondition() {
-        return condition;
-    }
-
-    public String getHofstraID() {
-        return hofstraID;
-    }
-
-    public boolean isStarred() {
-        return isStarred;
-    }
-
-
-
-
-
 }

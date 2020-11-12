@@ -26,7 +26,7 @@
     <string name="seller">Seller Mcbuys</string>
     <string name="author_is">Author:</string>
     <string name="author">Dr. Wrote Book</string>
-    <string name="isbn_is">ISBN</string>
+    <string name="isbn_is">ISBN:</string>
     <string name="isbn">00000000</string>
     <string name="contact">Contact Seller</string>
     <string name="add_book">Add Book</string>
@@ -42,6 +42,7 @@
     <string name="textbook_title">Title</string>
     <string name="my_listing" />
     <string name="old_pass">Old Password:</string>
+    <string name="X">X</string>
 
 
 </resources>

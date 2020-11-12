@@ -2,15 +2,23 @@ package com.csc190.bookbazaar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -18,6 +26,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+
+import static android.content.ContentValues.TAG;
+
 
 public class my_listing extends AppCompatActivity {
     FirebaseDatabase database;
@@ -28,6 +41,7 @@ public class my_listing extends AppCompatActivity {
     DocumentReference docRef;
     CollectionReference bookRef;
     RecyclerView recyclerview;
+    FirestoreRecyclerAdapter adapter;
     private static final String TAG =my_listing.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,27 +51,47 @@ public class my_listing extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-        //docRef = fStore.collection("users").document(user.getUid()); //.collection("Listing");
-        bookRef = fStore.collection("books"); //.collection("Listing");
-      //  Query query = bookRef.where("Owner", "==", mAuth.getUid());
-        // need to make a query to fetch results for recycleview ^this doesnt work
 
+        Query query = fStore.collection("books"); //.whereEqualTo("Owner", mAuth.getUid());
+        recyclerview = findViewById(R.id.booklist_ml);
+      //  recyclerview.setLayoutManager(
+        //        new LinearLayoutManager(this));
 
-        recyclerview =  findViewById(R.id.booklist_ml);
-        recyclerview.setLayoutManager(
-                new LinearLayoutManager(this));
-/*
-        FirebaseRecyclerOptions<Book> options
-                = new FirebaseRecyclerOptions.Builder<Book>()
-                .setQuery(???, book.class)
-                .build();*/
+        FirestoreRecyclerOptions<Book> options = new FirestoreRecyclerOptions.Builder<Book>()
+                .setQuery(query, Book.class)
+                .build();
+        adapter = new FirestoreRecyclerAdapter<Book, bookViewHolder>(options) {
+
+            @NonNull
+            @Override
+            public bookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.book_layout, parent, false);
+                return new bookViewHolder(view);
+            }
+
+            @Override
+            protected void onBindViewHolder(@NonNull bookViewHolder holder, int position, @NonNull Book model) {
+                Log.w(TAG, model.getTitle() +" "  +model.getPrice()  + " !!!!!!!!!!!");
+                holder.title.setText(model.getTitle());
+                holder.price.setText(model.getPrice());
+                holder.condition.setText(model.getCondition());
+            }
+
+        };
+
+//        adapter = new book_layout(options);
+        recyclerview.setHasFixedSize(true);
+        recyclerview.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerview.setAdapter(adapter);
+
         Button addButton;
         addButton = findViewById(R.id.button8);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), AddBook.class));
-             }
+            }
         });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -65,7 +99,7 @@ public class my_listing extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.tab_home:
                         startActivity(new Intent(getApplicationContext(), Home.class));
                         overridePendingTransition(0, 0);
@@ -84,6 +118,29 @@ public class my_listing extends AppCompatActivity {
                 return false;
             }
         });
+
+    }
+    class bookViewHolder extends RecyclerView.ViewHolder {
+        TextView title, price, condition;
+        public bookViewHolder(@NonNull View itemView) {
+            super(itemView);
+            title = itemView.findViewById(R.id.title_bl);
+            price = itemView.findViewById(R.id.price_bl);
+            condition = itemView.findViewById(R.id.condition_bl);
+        }
+    }
+    @Override protected void onStart()
+    {
+        super.onStart();
+        adapter.startListening();
+    }
+
+    // Function to tell the app to stop getting
+    // data from database on stoping of the activity
+    @Override protected void onStop()
+    {
+        super.onStop();
+        adapter.stopListening();
     }
 }
 

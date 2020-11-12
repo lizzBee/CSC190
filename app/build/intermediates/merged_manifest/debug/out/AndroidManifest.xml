@@ -30,6 +30,7 @@
         <activity android:name="com.csc190.bookbazaar.Starred" />
         <activity android:name="com.csc190.bookbazaar.my_listing" />
         <activity android:name="com.csc190.bookbazaar.Profile" />
+        <activity android:name="com.csc190.bookbazaar.EditProfile" />
         <activity android:name="com.csc190.bookbazaar.SearchResults" />
         <activity android:name="com.csc190.bookbazaar.SpecificTextbook" />
         <activity android:name="com.csc190.bookbazaar.AddBook" />
