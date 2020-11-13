@@ -4,68 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="230dp">
+
 
     <!--android:gravity="bottom|center_horizontal"-->
 
 
     <TextView
-        android:id="@+id/price_bl"
-        style="@style/Title_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="@string/price"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView27"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/condition_bl"
-        style="@style/Title_text"
+        style="@style/listing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="41dp"
         android:text="@string/condition"
-        app:layout_constraintEnd_toStartOf="@+id/buttondelete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView28"
         app:layout_constraintTop_toBottomOf="@+id/price_bl" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/price_bl"
+        style="@style/listing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/price_is"
-        app:layout_constraintEnd_toStartOf="@+id/price_bl"
+        android:layout_marginTop="53dp"
+        android:text="@string/price"
+        app:layout_constraintBottom_toTopOf="@+id/condition_bl"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
         app:layout_constraintTop_toBottomOf="@+id/title_bl" />
 
     <TextView
-        android:id="@+id/textView28"
-        android:layout_width="124dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/condition_is"
-        app:layout_constraintEnd_toStartOf="@+id/condition_bl"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:id="@+id/textView27"
+        style="@style/listing_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/price_is"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/title_bl"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textView28"
+        style="@style/listing_is"
+        android:layout_width="93dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/condition_is"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_bl" />
 
     <TextView
         android:id="@+id/title_bl"
-        style="@style/Title_text"
-        android:layout_width="400dp"
+        style="@style/listing"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="303dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/alike_angular"
+        android:maxLines="2"
         android:text="@string/textbook_title"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,26 +86,24 @@
         android:id="@+id/buttondelete"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginTop="101dp"
         android:background="@drawable/x_button"
         android:text="@string/X"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/condition_bl"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="172dp"
+        android:layout_width="151dp"
         android:layout_height="135dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/input"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28"
-        app:srcCompat="@android:drawable/ic_dialog_alert"
-        android:contentDescription="@string/input" />
+        app:layout_constraintTop_toBottomOf="@+id/title_bl"
+        app:srcCompat="@drawable/oopsie" />210dp"
+    tools:layout_editor_absoluteY="61dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
