@@ -6,7 +6,7 @@
     <string name="password">Password:</string>
     <string name="hof_id">Hofstra ID:</string>
     <string name="next">Next Step</string>
-    <string name="input"></string>
+    <string name="input">...</string>
     <string name="home_button">Home</string>
     <string name="starred_button">Starred</string>
     <string name="yl_button">Your Listings</string>
@@ -23,11 +23,11 @@
     <string name="price_is">Price:</string>
     <string name="condition">Good</string>
     <string name="condition_is">Condition:</string>
-    <string name="seller">Seller Mcbuys</string>
+    <string name="seller">Seller:   </string>
     <string name="author_is">Author:</string>
     <string name="author">Dr. Wrote Book</string>
     <string name="isbn_is">ISBN:</string>
-    <string name="isbn">00000000</string>
+    <string name="isbn">000-000-000000-0</string>
     <string name="contact">Contact Seller</string>
     <string name="add_book">Add Book</string>
     <string name="new_price">New Price:</string>
