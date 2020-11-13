@@ -67,6 +67,7 @@ public class Registration extends Activity {
                 final String ID = hofID.getText().toString();
                 final String username = user.getText().toString();
                 final String password = pass.getText().toString().trim();
+
                 if(TextUtils.isEmpty(email)) {
                     BarEmail.setError("Email is Required!");
                     return;
@@ -75,11 +76,22 @@ public class Registration extends Activity {
                     pass.setError("Password is Required!");
                     return;
                 }
+                if(TextUtils.isEmpty(username)) {
+                    user.setError("Username is Required!");
+                    return;
+                }
+                if(username.length() > 15) {
+                    user.setError("Keep username under 15 characters!");
+                    return;
+                }
                 if(password.length() < 8) {
                     pass.setError("Password must at least 8 characters!");
                     return;
                 }
-
+                if(ID.length() != 8 || ID.charAt(0) != 7) {
+                    pass.setError("Invalid Id!");
+                    return;
+                }
                 //create user
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override

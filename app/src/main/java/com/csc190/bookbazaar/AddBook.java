@@ -2,15 +2,24 @@ package com.csc190.bookbazaar;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import androidx.core.view.ViewCompat;
+
+import com.google.android.gms.common.server.converter.StringToIntConverter;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.text.NumberFormat;
+import java.util.Currency;
+import java.util.Locale;
 
 public class AddBook extends Activity {
 
@@ -28,7 +37,6 @@ public class AddBook extends Activity {
         //create a list of items for the spinner.
         String[] items = new String[]{"Nasty", "Poor", "Good", "New"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
-
         dropdown.setAdapter(adapter);
 
         final EditText isbn, price;
@@ -37,13 +45,25 @@ public class AddBook extends Activity {
 
         isbn = findViewById(R.id.editTextTextPersonName4);
         price = findViewById(R.id.editTextTextPersonName6); //price oriented edit text?
+        final NumberFormat format = NumberFormat.getCurrencyInstance(Locale.getDefault()); //formats numbers to price
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 //  final String bookTitle = title.getText().toString().trim();
+
                 final String bookISBN = isbn.getText().toString();
                 final String bookCond = dropdown.getSelectedItem().toString();
-                final String bookPrice = price.getText().toString().trim();
+
+                String bookPrice = price.getText().toString().trim();
+                bookPrice = (String) format.format(Integer.parseInt(bookPrice));
+                if(bookISBN.length() < 13) {
+                    isbn.setError("Invalid ISBN!");
+                    return;
+                }
+                if(TextUtils.isEmpty(bookPrice)) {
+                    price.setError("Price is Required!");
+                    return;
+                }
 
                 new FetchBook(bookCond, bookPrice).execute(bookISBN);
                 startActivity(new Intent(getApplicationContext(), my_listing.class));
