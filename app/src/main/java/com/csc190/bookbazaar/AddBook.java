@@ -26,7 +26,7 @@ public class AddBook extends Activity {
 
          final Spinner dropdown = findViewById(R.id.cond_spinner);
         //create a list of items for the spinner.
-        String[] items = new String[]{"Utter Disarray", "Poor", "Good", "Like New"};
+        String[] items = new String[]{"Nasty", "Poor", "Good", "New"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
 
         dropdown.setAdapter(adapter);

@@ -69,6 +69,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/booklist_ml"
         android:layout_width="386dp"
+        android:background="@color/colorAccent"
         android:layout_height="500dp"
         android:layout_marginStart="13dp"
         android:layout_marginTop="18dp"
