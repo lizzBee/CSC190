@@ -42,30 +42,25 @@
         style="@style/listing_is"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="53dp"
-        android:layout_marginEnd="40dp"
         android:layout_marginBottom="9dp"
         android:text="@string/price_is"
         app:layout_constraintBottom_toTopOf="@+id/textView28"
-        app:layout_constraintEnd_toStartOf="@+id/price_bl"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_bl" />
+        app:layout_constraintTop_toBottomOf="@+id/title_bl"
+        app:layout_constraintVertical_bias="0.666" />
 
     <TextView
         android:id="@+id/textView28"
         style="@style/listing_is"
         android:layout_width="93dp"
         android:layout_height="26dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginBottom="43dp"
         android:text="@string/condition_is"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/condition_bl"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/price_bl" />
 
