@@ -20,14 +20,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
 
@@ -42,6 +47,7 @@ public class my_listing extends AppCompatActivity {
     RecyclerView recyclerview;
     FirestoreRecyclerAdapter adapter;
     private static final String TAG =my_listing.class.getSimpleName();
+    ImageView sad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +57,22 @@ public class my_listing extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-
+        sad = findViewById(R.id.imageView);
         Query query = fStore.collection("books").whereEqualTo("Owner", mAuth.getUid());
+        //DocumentReference docRef = fStore.collection("books").whereEqualTo("Owner", mAuth.getUid());
+
+        query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                QuerySnapshot document = task.getResult();
+                if (document.isEmpty()) {
+                  //  Log.d(TAG, "SHE'S EMPTY!!!!");
+                    sad.setVisibility(View.VISIBLE);
+                }
+                else {sad.setVisibility(View.INVISIBLE);}
+            }
+        });
+
         recyclerview = findViewById(R.id.booklist_ml);
 
         FirestoreRecyclerOptions<Book> options = new FirestoreRecyclerOptions.Builder<Book>()
@@ -64,6 +84,9 @@ public class my_listing extends AppCompatActivity {
             @Override
             public bookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.book_layout, parent, false);
+                sad.setVisibility(View.INVISIBLE);
+                /*if (recyclerview.getItemDecorationCount() == 0) {Log.d(TAG, "SHE'S EMPTY!!!!");}
+                else {Log.d(TAG, "SHE'S having issues!!!!");}*/
                 return new bookViewHolder(view);
             }
 
