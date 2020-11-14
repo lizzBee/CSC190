@@ -200,6 +200,11 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                         // Move to the next item.
                         i++;
                     }
+                    int comma = findInStr(authors, ',');
+                    if (comma != -1) {
+                        authors = authors.substring(0, comma);
+                    }
+                    authors = authors.replaceAll("\\[", "").replaceAll("\\]","");
 
                     // If both are found, display the result.
                     if (title != null && authors != null){
@@ -214,6 +219,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                         book.put("Image", "http://covers.openlibrary.org/b/isbn/" + query +"-M.jpg");
                         book.put("ID", bookID);
                         book.put("Starred", new ArrayList<String>());
+
                         bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
@@ -254,5 +260,12 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                 Log.w(TAG, "loadPost:onCancelled", error.toException());
             }
         });
+    }
+    public static int findInStr(String s1, char c){
+        for (int i = 0; i < s1.length(); i++) {
+            if (s1.charAt(i) == c)
+                return i;
+        }
+        return -1;
     }
 }
