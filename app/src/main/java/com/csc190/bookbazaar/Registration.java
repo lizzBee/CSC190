@@ -88,8 +88,9 @@ public class Registration extends Activity {
                     pass.setError("Password must at least 8 characters!");
                     return;
                 }
-                if(ID.length() != 8 || ID.charAt(0) != 7) {
-                    pass.setError("Invalid Id!");
+                if(ID.length() != 9 || ID.charAt(0) != '7') {
+                    Log.d(TAG, "ID.length: " + ID.length()  +"id[0]:"  +ID.charAt(0));
+                    hofID.setError("Invalid Id!");
                     return;
                 }
                 //create user

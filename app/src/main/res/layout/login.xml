@@ -15,7 +15,7 @@
         android:autofillHints="@string/username"
         android:background="#FFFFFF"
         android:ems="10"
-        android:hint="@string/username"
+        android:hint="@string/email"
         android:inputType="textPersonName"
         android:textColor="#2E2727"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,17 +83,17 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
         app:layout_constraintVertical_bias="0.439" />
 
-    <TextView
-        android:id="@+id/tvForgotPW"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/forgotpass"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPW"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/etPW" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

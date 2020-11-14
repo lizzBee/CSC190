@@ -39,6 +39,7 @@ public class Login extends Activity {
         //forgetPass = (Button)findViewById(R.id.tvForgotPW);
         createAccount = findViewById(R.id.btnCreateNewAccount);
         login = findViewById(R.id.btnLogin);
+        forgetPass = findViewById(R.id.button2);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -51,7 +52,12 @@ public class Login extends Activity {
                 startActivity(new Intent(getApplicationContext(), Registration.class));
             }
         });
-
+        forgetPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ForgotPassword.class));
+            }
+        });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
