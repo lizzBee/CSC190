@@ -27,7 +27,7 @@
     <string name="author_is">Author:</string>
     <string name="author">Dr. Wrote Book</string>
     <string name="isbn_is">ISBN:</string>
-    <string name="isbn">000-000-000000-0</string>
+    <string name="isbn">13-Digit ISBN</string>
     <string name="contact">Contact Seller</string>
     <string name="add_book">Add Book</string>
     <string name="new_price">New Price:</string>

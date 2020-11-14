@@ -2,7 +2,6 @@ package com.csc190.bookbazaar;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,14 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import androidx.core.view.ViewCompat;
-
-import com.google.android.gms.common.server.converter.StringToIntConverter;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.NumberFormat;
-import java.util.Currency;
 import java.util.Locale;
 
 public class AddBook extends Activity {
@@ -55,7 +50,7 @@ public class AddBook extends Activity {
                 final String bookCond = dropdown.getSelectedItem().toString();
 
                 String bookPrice = price.getText().toString().trim();
-                bookPrice = (String) format.format(Integer.parseInt(bookPrice));
+                bookPrice = (String) format.format(Double.parseDouble(bookPrice));
                 if(bookISBN.length() < 13) {
                     isbn.setError("Invalid ISBN!");
                     return;
