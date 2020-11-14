@@ -73,7 +73,7 @@ public class my_listing extends AppCompatActivity {
                 holder.title.setText(model.getTitle());
                 holder.price.setText(model.getPrice());
                 holder.condition.setText(model.getCondition());
-                Picasso.with(getApplicationContext()).load(model.getImage()).into(holder.image); //gets image from URL
+                Picasso.with(getApplicationContext()).load(model.getImage()).placeholder(R.drawable.oopsie).error(R.drawable.oopsie).into(holder.image); //still does not load oopsie
                 holder.deleteButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

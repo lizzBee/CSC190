@@ -137,7 +137,8 @@
         android:layout_marginBottom="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/btn_star_big_off" /><![CDATA[
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:contentDescription="Star" /><![CDATA[
 
 
 
