@@ -14,13 +14,11 @@
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_marginTop="56dp"
-        android:layout_marginBottom="11dp"
         android:autofillHints="@string/input"
         android:background="@drawable/my_border"
         android:ems="10"
         android:hint="@string/input"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textView29"
         app:layout_constraintEnd_toStartOf="@+id/searchButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -45,38 +43,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="1dp"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
         app:menu="@menu/bottom_nav" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="410dp"
-        android:layout_height="464dp"
+        android:layout_width="385dp"
+        android:layout_height="473dp"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="62dp"
         android:layout_marginEnd="13dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView29"
         style="@style/Title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="105dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="91dp"
         android:text="@string/heyuser"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
