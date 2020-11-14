@@ -120,16 +120,18 @@ public class Home extends AppCompatActivity {
                         }
                     }
                 });
-
+                final DocumentReference bookRef = fStore.collection("books").document(model.getID());
+                bookRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        DocumentSnapshot document = task.getResult();
+                        final List<String> starred = (List<String>) document.get("Starred");
+                        if (starred.contains(user.getUid())) {
+                            holder.starredButton.setImageResource(R.drawable.btn_on);
+                        }
                 holder.starredButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        final DocumentReference bookRef = fStore.collection("books").document(model.getID());
-                        bookRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                                DocumentSnapshot document = task.getResult();
-                                List<String> starred = (List<String>) document.get("Starred");
                                 if (starred.contains(user.getUid())){
                                     holder.starredButton.setImageResource(R.drawable.btn_off);
                                     starred.remove(user.getUid());

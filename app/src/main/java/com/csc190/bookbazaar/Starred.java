@@ -36,6 +36,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Starred extends AppCompatActivity {
     EditText searchBar;
@@ -110,6 +111,7 @@ public class Starred extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull final bookViewHolder holder, int position, @NonNull final Book model) {
                 Log.w(TAG, model.getTitle() + " " + model.getPrice() + " !!!!!!!!!!!");
                 holder.title.setText(model.getTitle());
+                holder.starredButton.setImageResource(R.drawable.btn_on);
                 holder.price.setText(model.getPrice());
                 holder.condition.setText(model.getCondition());
                 holder.author.setText(model.getAuthor());
@@ -124,6 +126,23 @@ public class Starred extends AppCompatActivity {
                         }
                     }
                 });
+                final DocumentReference bookRef = fStore.collection("books").document(model.getID());
+                bookRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        DocumentSnapshot document = task.getResult();
+                        final List<String> starred = (List<String>) document.get("Starred");
+                        holder.starredButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                starred.remove(user.getUid());
+                                bookRef.update("Starred", starred);
+                            }
+                        });
+                    }});
+
+
+
                 Picasso.with(getApplicationContext()).load(model.getImage()).into(holder.image);
                 holder.starredButton.setOnClickListener(new View.OnClickListener() { //button doesn't remove anything
                     @Override
