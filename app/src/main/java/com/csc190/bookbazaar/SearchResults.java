@@ -57,6 +57,9 @@ public class SearchResults extends Activity {
         searchBar.setText(search);
 
         Query query = fStore.collection("books").whereEqualTo("ISBN", search);
+        if(query==null) {
+            //set image to something here
+        }
         recyclerview = findViewById(R.id.searchRecycler);
 
         FirestoreRecyclerOptions<Book> options = new FirestoreRecyclerOptions.Builder<Book>()
@@ -153,7 +156,7 @@ public class SearchResults extends Activity {
     }
 
     // Function to tell the app to stop getting
-    // data from database on stoping of the activity
+    // data from database on stopping of the activity
     @Override protected void onStop()
     {
         super.onStop();

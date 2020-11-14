@@ -4,16 +4,16 @@ package com.csc190.bookbazaar;
 //store book inside of a user to access the ID?
 //how to show book on home screen? store book in an array?
 
+import java.util.ArrayList;
+
 public class Book {
     private String Title, Author, ISBN, Condition, Price, Owner, Image, ID;
     String api = "AIzaSyCVDsAsNnZWvztoozZMSObD4WxPvnZ1L7E";
+    ArrayList<String> Starred;
 
     //OpenBooks for images: http://covers.openlibrary.org/b/isbn/" + book.ISBN +"-M.jpg"
     public Book() {
     }
-
-
-
 
     public Book(String cond, String pix, String prix, String bookTitle, String Image, String ID) {
         this.Title = bookTitle;
@@ -96,4 +96,13 @@ public class Book {
     public void setApi(String api) {
         this.api = api;
     }
+
+    public ArrayList<String> getStarred() {
+        return Starred;
+    }
+
+    public void setStarred(ArrayList<String> Starred) {
+        this.Starred = Starred;
+    }
+
 }

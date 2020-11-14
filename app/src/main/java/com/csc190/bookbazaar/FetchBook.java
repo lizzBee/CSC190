@@ -25,6 +25,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -212,6 +213,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                         book.put("Owner", userID);
                         book.put("Image", "http://covers.openlibrary.org/b/isbn/" + query +"-M.jpg");
                         book.put("ID", bookID);
+                        book.put("Starred", new ArrayList<String>());
                         bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
@@ -228,6 +230,8 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                         book.put("Price", Price);
                         book.put("Image", "http://covers.openlibrary.org/b/isbn/" + query +"-M.jpg");
                         book.put("ID", bookID);
+                        book.put("Starred", new ArrayList<String>() {
+                        });
                         bookRef.set(book).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
