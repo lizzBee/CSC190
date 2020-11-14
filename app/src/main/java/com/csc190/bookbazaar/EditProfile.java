@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -27,7 +28,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class EditProfile extends Activity {
+public class EditProfile extends AppCompatActivity {
     FirebaseDatabase database;// = FirebaseDatabase.getInstance();
     DatabaseReference myRef;// = database.getReference("user");
     FirebaseFirestore fStore;

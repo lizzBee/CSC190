@@ -10,13 +10,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class AddBook extends Activity {
+public class AddBook extends AppCompatActivity {
 
     FirebaseDatabase database;// = FirebaseDatabase.getInstance();
     FirebaseFirestore fStore;

@@ -32,6 +32,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
 public class Starred extends AppCompatActivity {
@@ -46,6 +47,7 @@ public class Starred extends AppCompatActivity {
     CollectionReference bookRef;
     RecyclerView recyclerview;
     FirestoreRecyclerAdapter adapter;
+    ImageView sad;
     private static final String TAG =my_listing.class.getSimpleName();
 
     @Override
@@ -72,9 +74,22 @@ public class Starred extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+
+        sad = findViewById(R.id.imageView);
     //query conditions do not work
         Query query = fStore.collection("books");//whereArrayContains("Starred", user.getUid());
         recyclerview = findViewById(R.id.starRecycle);
+        query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                QuerySnapshot document = task.getResult();
+                if (document.isEmpty()) {
+                    //  Log.d(TAG, "SHE'S EMPTY!!!!");
+                    sad.setVisibility(View.VISIBLE);
+                }
+                else {sad.setVisibility(View.INVISIBLE);}
+            }
+        });
 
         FirestoreRecyclerOptions<Book> options = new FirestoreRecyclerOptions.Builder<Book>()
                 .setQuery(query, Book.class)
@@ -86,6 +101,7 @@ public class Starred extends AppCompatActivity {
             @Override
             public Starred.bookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.search_book_layout, parent, false);
+                sad.setVisibility(View.INVISIBLE);
                 return new Starred.bookViewHolder(view);
             }
             @Override
@@ -154,7 +170,7 @@ public class Starred extends AppCompatActivity {
         });
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
-    class bookViewHolder extends RecyclerView.ViewHolder {
+    static class bookViewHolder extends RecyclerView.ViewHolder {
         TextView title, price, condition, seller, author;
         ImageView image;
         ImageButton starredButton;
