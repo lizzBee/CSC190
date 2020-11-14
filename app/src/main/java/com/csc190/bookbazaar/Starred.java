@@ -35,6 +35,8 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
+import java.util.Arrays;
+
 public class Starred extends AppCompatActivity {
     EditText searchBar;
     ImageButton searchButton;
@@ -77,14 +79,14 @@ public class Starred extends AppCompatActivity {
 
         sad = findViewById(R.id.imageView);
     //query conditions do not work
-        Query query = fStore.collection("books");//whereArrayContains("Starred", user.getUid());
+        Query query = fStore.collection("books").whereArrayContains("Starred", user.getUid());
         recyclerview = findViewById(R.id.starRecycle);
         query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 QuerySnapshot document = task.getResult();
                 if (document.isEmpty()) {
-                    //  Log.d(TAG, "SHE'S EMPTY!!!!");
+                    Log.d(TAG, "SHE'S EMPTY!!!!");
                     sad.setVisibility(View.VISIBLE);
                 }
                 else {sad.setVisibility(View.INVISIBLE);}

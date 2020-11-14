@@ -36,6 +36,8 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
+
 public class Home extends AppCompatActivity {
     EditText searchBar;
     ImageButton searchButton;
@@ -118,6 +120,33 @@ public class Home extends AppCompatActivity {
                         }
                     }
                 });
+
+                holder.starredButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        final DocumentReference bookRef = fStore.collection("books").document(model.getID());
+                        bookRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                DocumentSnapshot document = task.getResult();
+                                List<String> starred = (List<String>) document.get("Starred");
+                                if (starred.contains(user.getUid())){
+                                    holder.starredButton.setImageResource(R.drawable.btn_off);
+                                    starred.remove(user.getUid());
+                                } else {
+                                    holder.starredButton.setImageResource(R.drawable.btn_on);
+                                    starred.add(user.getUid());
+                                }
+                                bookRef.update("Starred", starred);
+                            }
+                            // if not starred already
+                            // set icon to yellow
+                            // add to array
+                            // else
+                            // set icon to grey
+                            // delete from array
+                        });
+                    }});
                 Picasso.with(getApplicationContext()).load(model.getImage()).into(holder.image);
               /*  holder.starredButton.setOnClickListener(new View.OnClickListener() { //button doesn't remove anything
                     @Override
