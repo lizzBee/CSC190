@@ -32,6 +32,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
+
 public class SearchResults extends AppCompatActivity {
 
     String search;
@@ -51,7 +53,7 @@ public class SearchResults extends AppCompatActivity {
         setContentView(R.layout.search_results);
         searchBar = findViewById(R.id.search_results);
         fStore = FirebaseFirestore.getInstance();
-
+        user = FirebaseAuth.getInstance().getCurrentUser();
         Intent intent = getIntent();
         search = intent.getStringExtra("search");
 
@@ -93,6 +95,29 @@ public class SearchResults extends AppCompatActivity {
                         }
                     }
                 });
+                final DocumentReference bookRef = fStore.collection("books").document(model.getID());
+                bookRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        DocumentSnapshot document = task.getResult();
+                        final List<String> starred = (List<String>) document.get("Starred");
+                        if (starred.contains(user.getUid())) {
+                            holder.starredButton.setImageResource(R.drawable.btn_on);
+                        }
+                        holder.starredButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                if (starred.contains(user.getUid())){
+                                    holder.starredButton.setImageResource(R.drawable.btn_off);
+                                    starred.remove(user.getUid());
+                                } else {
+                                    holder.starredButton.setImageResource(R.drawable.btn_on);
+                                    starred.add(user.getUid());
+                                }
+                                bookRef.update("Starred", starred);
+                            }
+                        });
+                    }});
                 Picasso.with(getApplicationContext()).load(model.getImage()).into(holder.image);
             }
         };
@@ -107,7 +132,7 @@ public class SearchResults extends AppCompatActivity {
         ////////////////////////////////////////////////////////////////////////////////////////////
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setSelectedItemId(R.id.tab_starred);
+        //wbottomNavigationView.setSelectedItemId(R.id.tab_starred);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

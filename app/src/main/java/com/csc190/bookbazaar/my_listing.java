@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -46,9 +48,11 @@ public class my_listing extends AppCompatActivity {
     CollectionReference bookRef;
     RecyclerView recyclerview;
     FirestoreRecyclerAdapter adapter;
+    EditText searchBar;
     private static final String TAG =my_listing.class.getSimpleName();
     ImageView sad;
-
+    ImageButton searchButton;
+    String searchText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,9 +62,22 @@ public class my_listing extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         sad = findViewById(R.id.imageView);
+        searchBar = findViewById(R.id.search_bar_ml);
+        searchButton = findViewById(R.id.imageButton);
+
+
         Query query = fStore.collection("books").whereEqualTo("Owner", mAuth.getUid());
         //DocumentReference docRef = fStore.collection("books").whereEqualTo("Owner", mAuth.getUid());
-
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                searchText = searchBar.getText().toString();
+                Intent intent = new Intent(my_listing.this, SearchResults.class);
+                intent.putExtra("search", searchText);
+                if(!searchText.equals(""))
+                    startActivity(intent);
+            }
+        });
         query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -148,6 +165,7 @@ public class my_listing extends AppCompatActivity {
             }
         });
     }
+
     class bookViewHolder extends RecyclerView.ViewHolder {
         TextView title, price, condition;
         ImageView image;

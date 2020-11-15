@@ -70,7 +70,7 @@ public class Home extends AppCompatActivity {
                 if(task.isSuccessful()) {
                     DocumentSnapshot documentSnapshot = task.getResult();
                     String name = documentSnapshot.getString("username");
-                    greeting.setText("Hey, " +name +",you suck!");
+                    greeting.setText("Welcome " +name +"!");
                     }
             }
         });
@@ -126,21 +126,19 @@ public class Home extends AppCompatActivity {
                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                         DocumentSnapshot document = task.getResult();
                         final List<String> starred = (List<String>) document.get("Starred");
-                        if (starred.contains(user.getUid())) {
-                            holder.starredButton.setImageResource(R.drawable.btn_on);
-                        }
+
                 holder.starredButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                                if (starred.contains(user.getUid())){
-                                    holder.starredButton.setImageResource(R.drawable.btn_off);
-                                    starred.remove(user.getUid());
-                                } else {
-                                    holder.starredButton.setImageResource(R.drawable.btn_on);
-                                    starred.add(user.getUid());
-                                }
-                                bookRef.update("Starred", starred);
-                            }
+                        if (starred.contains(user.getUid())){
+                            holder.starredButton.setImageResource(R.drawable.btn_off);
+                            starred.remove(user.getUid());
+                        } else {
+                            holder.starredButton.setImageResource(R.drawable.btn_on);
+                            starred.add(user.getUid());
+                        }
+                        bookRef.update("Starred", starred);
+                    }
                             // if not starred already
                             // set icon to yellow
                             // add to array
