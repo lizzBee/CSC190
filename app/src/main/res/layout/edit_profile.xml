@@ -123,4 +123,30 @@
         app:barrierDirection="top"
         app:constraint_referenced_ids="linearLayout" />
 
+    <TextView
+        android:id="@+id/textView32"
+        style="@style/Title_text"
+        android:layout_width="352dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView33"
+        style="@style/listing_is"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="106dp"
+        android:text="@string/blank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

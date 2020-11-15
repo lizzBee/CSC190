@@ -8,37 +8,6 @@
 
     <!--android:gravity="bottom|center_horizontal"-->
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="68dp"
-        android:autofillHints="@string/input"
-        android:background="@drawable/my_border"
-        android:ems="10"
-        android:hint="@string/input"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_margin="0dp"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="@string/input"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
-        app:srcCompat="@drawable/search" />
-
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
@@ -54,18 +23,17 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
-        android:layout_width="359dp"
+        android:layout_width="340dp"
         android:layout_height="44dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginEnd="33dp"
         android:autofillHints=""
-        android:inputType="number"
         android:background="@drawable/my_border"
         android:ems="10"
         android:hint="@string/isbn"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -101,20 +69,21 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
-        android:layout_width="356dp"
+        android:layout_width="340dp"
         android:layout_height="40dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="33dp"
         android:layout_marginBottom="212dp"
         android:autofillHints="@string/input"
-        android:inputType="numberDecimal"
         android:background="@drawable/my_border"
         android:ems="10"
         android:hint="@string/price"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <Button
         android:id="@+id/button12"
@@ -134,16 +103,15 @@
 
     <Spinner
         android:id="@+id/cond_spinner"
-        android:layout_width="365dp"
+        android:layout_width="340dp"
         android:layout_height="46dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="33dp"
         android:background="@drawable/my_border"
         android:popupBackground="@drawable/my_border"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
         app:layout_constraintVertical_bias="0.0" />
@@ -153,15 +121,15 @@
         style="@style/Title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="270dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="239dp"
         android:layout_marginBottom="49dp"
         android:text="@string/add_book"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

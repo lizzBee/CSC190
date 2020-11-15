@@ -23,19 +23,19 @@
         android:id="@+id/starSearchBar"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_marginTop="89dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
         android:autofillHints="@string/input"
         android:background="@drawable/my_border"
         android:ems="10"
         android:hint="@string/input"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toStartOf="@+id/starSearchButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="151dp"
@@ -52,15 +52,25 @@
         android:layout_width="44dp"
         android:layout_height="44dp"
         android:layout_margin="0dp"
-        android:layout_marginBottom="16dp"
-        android:scaleType="fitXY"
         android:contentDescription="@string/input"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@+id/starSearchBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/starSearchBar"
-        app:srcCompat="@drawable/search"
-        />
+        app:layout_constraintTop_toTopOf="@+id/starSearchBar"
+        app:srcCompat="@drawable/search" />
+
+    <View
+        android:id="@+id/rectangle_at_the_top"
+        android:layout_width="500dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/starRecycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
@@ -68,21 +78,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="125dp"
         android:layout_marginEnd="323dp"
         android:text="@string/starred_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/starSearchBar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/starRecycle"
-        android:layout_width="381dp"
-        android:layout_height="454dp"
+        android:layout_width="385dp"
+        android:layout_height="473dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

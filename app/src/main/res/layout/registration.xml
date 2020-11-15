@@ -10,7 +10,8 @@
         android:id="@+id/barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="top" />
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteY="731dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -31,34 +32,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
         android:autofillHints="username"
         android:text="@string/hof_id"
         android:textSize="19sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        style="@style/listing_is"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button"
+        style="@style/Button_text"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginBottom="128dp"
-        android:text="@string/next"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="140dp"
         android:background="@drawable/my_button"
-        style="@style/Button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
     <TextView
         android:id="@+id/textView"
+        style="@style/Title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registration"
-        style="@style/Title_text"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:layout_marginTop="105dp"
+        android:text="@string/create"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="16dp" />
 
@@ -67,10 +69,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        style="@style/listing_is"
         android:text="@string/username"
         android:textSize="19sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -78,11 +80,11 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/listing_is"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
         android:text="@string/password"
         android:textSize="19sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -91,8 +93,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        style="@style/listing_is"
         android:text="@string/email"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -116,35 +119,32 @@
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="48dp"
         android:autofillHints="@string/input"
         android:background="@drawable/my_border"
         android:ems="10"
         android:hint="@string/input"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_chainStyle="packed"
         tools:ignore="MissingClass" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="48dp"
         android:autofillHints="password"
         android:background="@drawable/my_border"
         android:ems="10"
         android:hint="@string/input"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
@@ -152,9 +152,9 @@
         android:id="@+id/editTextid"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="57dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="48dp"
         android:autofillHints="password"
         android:background="@drawable/my_border"
         android:ems="10"
@@ -168,9 +168,9 @@
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="57dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="48dp"
         android:autofillHints="username"
         android:background="@drawable/my_border"
         android:ems="10"
