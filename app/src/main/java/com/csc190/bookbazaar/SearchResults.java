@@ -1,6 +1,6 @@
 package com.csc190.bookbazaar;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,11 +25,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -38,15 +38,18 @@ public class SearchResults extends AppCompatActivity {
 
     String search;
     EditText searchBar;
-    FirebaseDatabase database;
-    FirebaseAuth mAuth;
+    TextView results;
     FirebaseFirestore fStore;
     FirebaseUser user;
     RecyclerView recyclerview;
     FirestoreRecyclerAdapter adapter;
     DocumentReference docRef;
+    ImageView sad;
+    ImageButton searchButton;
+    String searchText;
     private static final String TAG =my_listing.class.getSimpleName();
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,13 +59,35 @@ public class SearchResults extends AppCompatActivity {
         user = FirebaseAuth.getInstance().getCurrentUser();
         Intent intent = getIntent();
         search = intent.getStringExtra("search");
-
+        results = findViewById(R.id.textView31);
         searchBar.setText(search);
+        searchButton = findViewById(R.id.imageButton);
 
+
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                searchText = searchBar.getText().toString();
+                Intent intent = new Intent(SearchResults.this, SearchResults.class);
+                intent.putExtra("search", searchText);
+                if(!searchText.equals(""))
+                    startActivity(intent);
+            }
+        });
+
+        sad = findViewById(R.id.imageViewsad);
+        results.setText("Results for "  +search  +":");
         Query query = fStore.collection("books").whereEqualTo("ISBN", search);
-        if(query==null) {
-            //set image to something here
-        }
+        query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                QuerySnapshot document = task.getResult();
+                if (document.isEmpty()) {
+                    sad.setVisibility(View.VISIBLE);
+                }
+                else {sad.setVisibility(View.INVISIBLE);}
+            }
+        });
         recyclerview = findViewById(R.id.searchRecycler);
 
         FirestoreRecyclerOptions<Book> options = new FirestoreRecyclerOptions.Builder<Book>()
