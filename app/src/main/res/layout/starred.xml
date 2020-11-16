@@ -66,11 +66,13 @@
         android:layout_width="500dp"
         android:layout_height="10dp"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
         android:background="@color/colorAccent"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/starRecycle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starSearchBar" />
 
     <TextView
         android:id="@+id/textView13"
@@ -78,11 +80,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="323dp"
+        android:layout_marginBottom="27dp"
         android:text="@string/starred_button"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_at_the_top"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starSearchBar" />
 
@@ -90,8 +94,11 @@
         android:id="@+id/starRecycle"
         android:layout_width="385dp"
         android:layout_height="473dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_at_the_top"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
