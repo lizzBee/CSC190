@@ -1,9 +1,7 @@
 package com.csc190.bookbazaar;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,11 +31,9 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
-
 public class Home extends AppCompatActivity {
     EditText searchBar;
     ImageButton searchButton;
@@ -126,7 +122,9 @@ public class Home extends AppCompatActivity {
                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                         DocumentSnapshot document = task.getResult();
                         final List<String> starred = (List<String>) document.get("Starred");
-
+                        if (starred.contains(user.getUid())) {
+                            holder.starredButton.setImageResource(R.drawable.btn_on);
+                        }
                 holder.starredButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
