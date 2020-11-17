@@ -1,6 +1,5 @@
 package com.csc190.bookbazaar;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -73,8 +72,9 @@ public class Registration extends AppCompatActivity {
                     BarEmail.setError("Email is Required!");
                     return;
                 }
-                if(TextUtils.isEmpty(password)) {
-                    pass.setError("Password is Required!");
+                if(ID.length() != 9 || ID.charAt(0) != '7') {
+                    //Log.d(TAG, "ID.length: " + ID.length()  +"id[0]:"  +ID.charAt(0));
+                    hofID.setError("Invalid Id!");
                     return;
                 }
                 if(TextUtils.isEmpty(username)) {
@@ -85,15 +85,15 @@ public class Registration extends AppCompatActivity {
                     user.setError("Keep username under 15 characters!");
                     return;
                 }
+                if(TextUtils.isEmpty(password)) {
+                    pass.setError("Password is Required!");
+                    return;
+                }
                 if(password.length() < 8) {
                     pass.setError("Password must at least 8 characters!");
                     return;
                 }
-                if(ID.length() != 9 || ID.charAt(0) != '7') {
-                    Log.d(TAG, "ID.length: " + ID.length()  +"id[0]:"  +ID.charAt(0));
-                    hofID.setError("Invalid Id!");
-                    return;
-                }
+
                 //create user
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override

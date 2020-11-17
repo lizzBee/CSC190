@@ -92,8 +92,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/starRecycle"
-        android:layout_width="385dp"
-        android:layout_height="473dp"
+        android:layout_width="363dp"
+        android:layout_height="415dp"
         android:layout_marginTop="2dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"

@@ -32,14 +32,14 @@
         android:layout_width="44dp"
         android:layout_height="44dp"
         android:layout_marginTop="56dp"
-        android:layout_marginBottom="120dp"
         android:contentDescription="@string/input"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_at_the_top"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/searchbar"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
         app:srcCompat="@drawable/search" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -59,24 +59,25 @@
         android:layout_width="500dp"
         android:layout_height="10dp"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="28dp"
         android:background="@color/colorAccent"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="385dp"
-        android:layout_height="473dp"
+        android:layout_width="378dp"
+        android:layout_height="338dp"
         android:layout_marginStart="13dp"
         android:layout_marginTop="62dp"
         android:layout_marginEnd="13dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView29"
